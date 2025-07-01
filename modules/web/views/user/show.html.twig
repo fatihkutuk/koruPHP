@@ -1,0 +1,51 @@
+{% extends "@web/layouts/app.html.twig" %}
+
+{% block content %}
+<div class="page-header">
+    <h2>{{ title|default('Kullanıcı Detayı') }}</h2>
+    <a href="{{ url('/users') }}" class="btn btn-secondary">← Geri Dön</a>
+</div>
+
+<div class="user-detail">
+    <div class="user-profile">
+        <div class="profile-avatar">
+            <img src="{{ asset('images/' ~ (user.avatar|default('default.jpg'))) }}" 
+                 alt="{{ user.name }}">
+        </div>
+        <div class="profile-info">
+            <h1>{{ user.name }}</h1>
+            <p class="user-email">{{ user.email }}</p>
+            <p class="user-status">
+                <span class="status status-{{ user.status }}">{{ user.status }}</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="user-details-grid">
+        <div class="detail-card">
+            <h3>Kişisel Bilgiler</h3>
+            {% if user.bio %}
+                <p><strong>Bio:</strong> {{ user.bio }}</p>
+            {% endif %}
+            {% if user.phone %}
+                <p><strong>Telefon:</strong> {{ user.phone }}</p>
+            {% endif %}
+            <p><strong>Kayıt Tarihi:</strong> {{ user.created_at }}</p>
+            {% if user.last_login %}
+                <p><strong>Son Giriş:</strong> {{ user.last_login }}</p>
+            {% endif %}
+            <p><strong>Giriş Sayısı:</strong> {{ user.login_count|default(0) }}</p>
+        </div>
+
+        <div class="detail-card">
+            <h3>Hesap Durumu</h3>
+            <p><strong>Durum:</strong> {{ user.status }}</p>
+            {% if user.email_verified_at %}
+                <p><strong>Email Doğrulanma:</strong> ✅ {{ user.email_verified_at }}</p>
+            {% else %}
+                <p><strong>Email Doğrulanma:</strong> ❌ Doğrulanmamış</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

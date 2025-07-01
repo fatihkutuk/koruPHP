@@ -1,0 +1,21 @@
+{
+    "name": "koru/koru-php",
+    "description": "Minimalist ve yüksek performanslı PHP framework",
+    "type": "framework",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Koru\\": "core/",
+            "App\\": "modules/",
+            "App\\Middleware\\": "middleware/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "vlucas/phpdotenv": "^5.0",
+        "twig/twig": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    }
+}

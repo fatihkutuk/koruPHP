@@ -1,0 +1,41 @@
+{% extends "@web/layouts/app.html.twig" %}
+
+{% block content %}
+<div class="page-header">
+    <h2>{{ title|default('Kullanıcı Listesi') }}</h2>
+    <p>Toplam {{ users|length }} kullanıcı bulundu</p>
+</div>
+
+{% if users is empty %}
+    <div class="alert alert-info">
+        <p>Henüz kullanıcı bulunamadı.</p>
+        <p><a href="{{ url('/test') }}">Test Sayfasına Dön</a></p>
+    </div>
+{% else %}
+    <div class="user-grid">
+        {% for user in users %}
+            <div class="user-card">
+                <div class="user-avatar">
+                    <img src="{{ asset('images/' ~ (user.avatar|default('default.jpg'))) }}" 
+                         alt="{{ user.name }}" 
+                         onerror="this.src='{{ asset('images/default.jpg') }}'">
+                </div>
+                <h3>{{ user.name }}</h3>
+                <p><strong>Email:</strong> {{ user.email }}</p>
+                <p><strong>Durum:</strong> 
+                    <span class="status status-{{ user.status }}">{{ user.status }}</span>
+                </p>
+                {% if user.bio %}
+                    <p><strong>Bio:</strong> {{ user.bio|slice(0, 50) }}...</p>
+                {% endif %}
+                {% if user.phone %}
+                    <p><strong>Telefon:</strong> {{ user.phone }}</p>
+                {% endif %}
+                <div class="user-actions">
+                    <a href="{{ url('/users/' ~ user.id) }}" class="btn btn-primary">Detay Görüntüle</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+{% endblock %}

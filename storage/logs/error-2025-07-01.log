@@ -1,0 +1,10 @@
+[2025-07-01 22:56:05] error: Route handler error {"handler":"Closure","params":[],"error":"Bu bir test hatasıdır!"}
+[2025-07-01 22:56:05] error: Application error {"error":"Bu bir test hatasıdır!","file":"C:\\koruPHP\\modules\\web\\controllers\\TestController.php","line":66}
+[2025-07-01 22:56:05] error: Bu bir test hatasıdır! {"file":"C:\\koruPHP\\modules\\web\\controllers\\TestController.php","line":66,"trace":"#0 C:\\koruPHP\\modules\\web\\routes.php(31): App\\Web\\Controllers\\TestController->errorTest()\n#1 [internal function]: Koru\\Application->{closure}()\n#2 C:\\koruPHP\\core\\Router.php(140): call_user_func_array(Object(Closure), Array)\n#3 C:\\koruPHP\\core\\Router.php(92): Koru\\Router->callHandler(Array, Array)\n#4 C:\\koruPHP\\core\\Application.php(93): Koru\\Router->dispatch('GET', '\/test\/error')\n#5 C:\\koruPHP\\public\\index.php(32): Koru\\Application->run()\n#6 {main}"}
+[2025-07-01 22:59:25] error: Route handler error {"handler":"Closure","params":[],"error":"Bu bir test hatasıdır! Environment: production, Debug: true"}
+[2025-07-01 22:59:25] error: Application error {"error":"Bu bir test hatasıdır! Environment: production, Debug: true","file":"C:\\koruPHP\\modules\\web\\controllers\\TestController.php","line":131}
+[2025-07-01 22:59:25] error: Bu bir test hatasıdır! Environment: production, Debug: true {"file":"C:\\koruPHP\\modules\\web\\controllers\\TestController.php","line":131,"trace":"#0 C:\\koruPHP\\modules\\web\\routes.php(32): App\\Web\\Controllers\\TestController->errorTest()\n#1 [internal function]: Koru\\Application->{closure}()\n#2 C:\\koruPHP\\core\\Router.php(140): call_user_func_array(Object(Closure), Array)\n#3 C:\\koruPHP\\core\\Router.php(92): Koru\\Router->callHandler(Array, Array)\n#4 C:\\koruPHP\\core\\Application.php(93): Koru\\Router->dispatch('GET', '\/test\/error')\n#5 C:\\koruPHP\\public\\index.php(32): Koru\\Application->run()\n#6 {main}"}
+[2025-07-01 22:59:51] emergency: 🚨 Emergency level test
+[2025-07-01 22:59:51] alert: ⚠️ Alert level test
+[2025-07-01 22:59:51] critical: 💥 Critical level test
+[2025-07-01 22:59:51] error: ❌ Error level test

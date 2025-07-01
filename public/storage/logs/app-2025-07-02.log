@@ -1,0 +1,1199 @@
+[2025-07-02 00:01:08] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:01:08] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:01:08] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:01:08] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:01:08] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test"}
+[2025-07-02 00:01:09] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:01:09] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:01:09] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:01:09] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:01:09] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test"}
+[2025-07-02 00:01:14] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:01:14] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:01:14] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:01:14] info: Request started {"method":"GET","uri":"\/auth\/login","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:01:14] info: Route matched {"method":"GET","uri":"\/auth\/login","pattern":"\/auth\/login"}
+[2025-07-02 00:01:25] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:01:25] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:01:25] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:01:25] info: Request started {"method":"POST","uri":"\/auth\/login","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:01:25] info: Route matched {"method":"POST","uri":"\/auth\/login","pattern":"\/auth\/login"}
+[2025-07-02 00:01:25] debug: SQL Query {"sql":"SELECT * FROM users WHERE email = ? AND status = 'active'","bindings":["test.admin@koruphp.com"],"connection":"default"}
+[2025-07-02 00:01:25] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:01:25] debug: Query executed {"execution_time_ms":2.34,"rows_returned":0}
+[2025-07-02 00:01:29] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:01:29] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:01:29] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:01:29] info: Request started {"method":"GET","uri":"\/auth\/login","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:01:29] info: Route matched {"method":"GET","uri":"\/auth\/login","pattern":"\/auth\/login"}
+[2025-07-02 00:01:31] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:01:31] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:01:31] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:01:31] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:01:31] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test"}
+[2025-07-02 00:01:32] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:01:32] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:01:32] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:01:32] info: Request started {"method":"GET","uri":"\/test\/create-test-users","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:01:32] info: Route matched {"method":"GET","uri":"\/test\/create-test-users","pattern":"\/test\/create-test-users"}
+[2025-07-02 00:01:32] debug: SQL Query {"sql":"SELECT id FROM users WHERE email = ?","bindings":["test.admin@koruphp.com"],"connection":"default"}
+[2025-07-02 00:01:32] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:01:32] debug: Query executed {"execution_time_ms":23.77,"rows_returned":0}
+[2025-07-02 00:01:32] debug: SQL Execute {"sql":"\r\n                        INSERT INTO users (name, email, password, role, status, email_verified_at, created_at) \r\n                        VALUES (?, ?, ?, ?, 'active', NOW(), NOW())\r\n                    ","bindings":["Test Admin","test.admin@koruphp.com","$2y$10$UQ\/yzTBx6z7bsrxTQ8i4NuCopOeARBz8riREAgDRxtR994W2P4jru","admin"],"connection":"default"}
+[2025-07-02 00:01:32] debug: Query executed {"execution_time_ms":2.09,"rows_affected":1}
+[2025-07-02 00:01:32] debug: SQL Execute {"sql":"\r\n                        INSERT INTO profiles (user_id, bio) \r\n                        VALUES (?, ?)\r\n                    ","bindings":[5,"Test kullanıcısı - admin"],"connection":"default"}
+[2025-07-02 00:01:32] debug: Query executed {"execution_time_ms":2.36,"rows_affected":1}
+[2025-07-02 00:01:32] debug: SQL Execute {"sql":"\r\n                            INSERT INTO user_permissions (user_id, permission_id)\r\n                            SELECT ?, id FROM permissions\r\n                        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:01:32] debug: Query executed {"execution_time_ms":1.52,"rows_affected":13}
+[2025-07-02 00:01:32] debug: SQL Query {"sql":"SELECT id FROM users WHERE email = ?","bindings":["test.user@koruphp.com"],"connection":"default"}
+[2025-07-02 00:01:32] debug: Query executed {"execution_time_ms":1.07,"rows_returned":0}
+[2025-07-02 00:01:32] debug: SQL Execute {"sql":"\r\n                        INSERT INTO users (name, email, password, role, status, email_verified_at, created_at) \r\n                        VALUES (?, ?, ?, ?, 'active', NOW(), NOW())\r\n                    ","bindings":["Test User","test.user@koruphp.com","$2y$10$4bm7h2C\/uokrSvlft2QG4uvdu67Moyoeldvt1iXrOYu5Q9TfD2GuG","user"],"connection":"default"}
+[2025-07-02 00:01:32] debug: Query executed {"execution_time_ms":1.81,"rows_affected":1}
+[2025-07-02 00:01:32] debug: SQL Execute {"sql":"\r\n                        INSERT INTO profiles (user_id, bio) \r\n                        VALUES (?, ?)\r\n                    ","bindings":[6,"Test kullanıcısı - user"],"connection":"default"}
+[2025-07-02 00:01:32] debug: Query executed {"execution_time_ms":1.47,"rows_affected":1}
+[2025-07-02 00:01:32] debug: SQL Query {"sql":"SELECT id FROM users WHERE email = ?","bindings":["test.operator@koruphp.com"],"connection":"default"}
+[2025-07-02 00:01:32] debug: Query executed {"execution_time_ms":0.66,"rows_returned":0}
+[2025-07-02 00:01:32] debug: SQL Execute {"sql":"\r\n                        INSERT INTO users (name, email, password, role, status, email_verified_at, created_at) \r\n                        VALUES (?, ?, ?, ?, 'active', NOW(), NOW())\r\n                    ","bindings":["Test Operator","test.operator@koruphp.com","$2y$10$nBT2AvpCI\/mELmQnk1lsxu\/J71nqUKv94.7Jg\/LAESOVkCi.07KIC","operator"],"connection":"default"}
+[2025-07-02 00:01:32] debug: Query executed {"execution_time_ms":1.71,"rows_affected":1}
+[2025-07-02 00:01:32] debug: SQL Execute {"sql":"\r\n                        INSERT INTO profiles (user_id, bio) \r\n                        VALUES (?, ?)\r\n                    ","bindings":[7,"Test kullanıcısı - operator"],"connection":"default"}
+[2025-07-02 00:01:32] debug: Query executed {"execution_time_ms":1.59,"rows_affected":1}
+[2025-07-02 00:01:32] debug: SQL Execute {"sql":"\r\n                            INSERT INTO user_permissions (user_id, permission_id)\r\n                            SELECT ?, id FROM permissions WHERE category = 'scada'\r\n                        ","bindings":[7],"connection":"default"}
+[2025-07-02 00:01:32] debug: Query executed {"execution_time_ms":1.28,"rows_affected":3}
+[2025-07-02 00:01:44] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:01:44] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:01:44] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:01:44] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:01:44] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test"}
+[2025-07-02 00:01:46] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:01:46] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:01:46] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:01:46] info: Request started {"method":"GET","uri":"\/auth\/login","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:01:46] info: Route matched {"method":"GET","uri":"\/auth\/login","pattern":"\/auth\/login"}
+[2025-07-02 00:01:52] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:01:52] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:01:52] info: Request started {"method":"POST","uri":"\/auth\/login","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:01:52] info: Route matched {"method":"POST","uri":"\/auth\/login","pattern":"\/auth\/login"}
+[2025-07-02 00:01:52] debug: SQL Query {"sql":"SELECT * FROM users WHERE email = ? AND status = 'active'","bindings":["test.admin@koruphp.com"],"connection":"default"}
+[2025-07-02 00:01:52] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:01:52] debug: Query executed {"execution_time_ms":15.62,"rows_returned":1}
+[2025-07-02 00:01:52] debug: SQL Execute {"sql":"UPDATE users SET last_login = NOW(), login_count = login_count + 1 WHERE id = ?","bindings":[5],"connection":"default"}
+[2025-07-02 00:01:52] debug: Query executed {"execution_time_ms":2.64,"rows_affected":1}
+[2025-07-02 00:01:52] info: User logged in {"user_id":5,"email":"test.admin@koruphp.com"}
+[2025-07-02 00:01:52] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:01:52] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:01:52] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:01:52] info: Request started {"method":"GET","uri":"\/dashboard","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:01:52] info: Route matched {"method":"GET","uri":"\/dashboard","pattern":"\/dashboard"}
+[2025-07-02 00:02:25] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:02:25] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:02:25] info: Request started {"method":"GET","uri":"\/","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:02:25] info: Route matched {"method":"GET","uri":"\/","pattern":"\/"}
+[2025-07-02 00:02:25] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:02:25] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:02:25] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:02:25] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:02:25] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test"}
+[2025-07-02 00:02:25] debug: SQL Query {"sql":"\r\n                    SELECT u.*, p.bio, p.phone, p.avatar \r\n                    FROM users u \r\n                    LEFT JOIN profiles p ON u.id = p.user_id \r\n                    WHERE u.id = ? AND u.status = 'active'\r\n                ","bindings":[5],"connection":"default"}
+[2025-07-02 00:02:25] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:02:25] debug: Query executed {"execution_time_ms":24.91,"rows_returned":1}
+[2025-07-02 00:02:25] debug: SQL Query {"sql":"\r\n            SELECT p.name \r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:02:25] debug: Query executed {"execution_time_ms":1.81,"rows_returned":13}
+[2025-07-02 00:02:26] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:02:26] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:02:26] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:02:26] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:02:26] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test"}
+[2025-07-02 00:02:26] debug: SQL Query {"sql":"\r\n                    SELECT u.*, p.bio, p.phone, p.avatar \r\n                    FROM users u \r\n                    LEFT JOIN profiles p ON u.id = p.user_id \r\n                    WHERE u.id = ? AND u.status = 'active'\r\n                ","bindings":[5],"connection":"default"}
+[2025-07-02 00:02:26] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:02:26] debug: Query executed {"execution_time_ms":13.22,"rows_returned":1}
+[2025-07-02 00:02:26] debug: SQL Query {"sql":"\r\n            SELECT p.name \r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:02:26] debug: Query executed {"execution_time_ms":1.11,"rows_returned":13}
+[2025-07-02 00:02:34] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:02:34] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:02:34] info: Request started {"method":"GET","uri":"\/auth\/logout","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:02:34] info: Route matched {"method":"GET","uri":"\/auth\/logout","pattern":"\/auth\/logout"}
+[2025-07-02 00:02:34] info: User logged out {"user_id":5}
+[2025-07-02 00:02:34] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:02:34] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:02:34] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:02:34] info: Request started {"method":"GET","uri":"\/auth\/login","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:02:34] info: Route matched {"method":"GET","uri":"\/auth\/login","pattern":"\/auth\/login"}
+[2025-07-02 00:02:49] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:02:49] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:02:49] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:02:49] info: Request started {"method":"POST","uri":"\/auth\/login","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:02:49] info: Route matched {"method":"POST","uri":"\/auth\/login","pattern":"\/auth\/login"}
+[2025-07-02 00:02:49] debug: SQL Query {"sql":"SELECT * FROM users WHERE email = ? AND status = 'active'","bindings":["test.admin@koruphp.com"],"connection":"default"}
+[2025-07-02 00:02:49] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:02:49] debug: Query executed {"execution_time_ms":23.65,"rows_returned":1}
+[2025-07-02 00:02:50] debug: SQL Execute {"sql":"UPDATE users SET last_login = NOW(), login_count = login_count + 1 WHERE id = ?","bindings":[5],"connection":"default"}
+[2025-07-02 00:02:50] debug: Query executed {"execution_time_ms":2.62,"rows_affected":1}
+[2025-07-02 00:02:50] info: User logged in {"user_id":5,"email":"test.admin@koruphp.com"}
+[2025-07-02 00:02:50] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:02:50] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:02:50] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:02:50] info: Request started {"method":"GET","uri":"\/dashboard","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:02:50] info: Route matched {"method":"GET","uri":"\/dashboard","pattern":"\/dashboard"}
+[2025-07-02 00:02:52] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:02:52] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:02:52] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:02:52] info: Request started {"method":"GET","uri":"\/dashboard","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:02:52] info: Route matched {"method":"GET","uri":"\/dashboard","pattern":"\/dashboard"}
+[2025-07-02 00:02:53] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:02:53] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:02:53] info: Request started {"method":"GET","uri":"\/","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:02:53] info: Route matched {"method":"GET","uri":"\/","pattern":"\/"}
+[2025-07-02 00:02:53] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:02:53] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:02:53] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:02:53] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test"}
+[2025-07-02 00:02:53] debug: SQL Query {"sql":"\r\n                    SELECT u.*, p.bio, p.phone, p.avatar \r\n                    FROM users u \r\n                    LEFT JOIN profiles p ON u.id = p.user_id \r\n                    WHERE u.id = ? AND u.status = 'active'\r\n                ","bindings":[5],"connection":"default"}
+[2025-07-02 00:02:53] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:02:53] debug: Query executed {"execution_time_ms":21.53,"rows_returned":1}
+[2025-07-02 00:02:53] debug: SQL Query {"sql":"\r\n            SELECT p.name \r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:02:53] debug: Query executed {"execution_time_ms":0.96,"rows_returned":13}
+[2025-07-02 00:02:53] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:02:53] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:02:53] info: Request started {"method":"GET","uri":"\/","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:02:53] info: Route matched {"method":"GET","uri":"\/","pattern":"\/"}
+[2025-07-02 00:02:53] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:02:53] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:02:53] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:02:53] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:02:53] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test"}
+[2025-07-02 00:02:53] debug: SQL Query {"sql":"\r\n                    SELECT u.*, p.bio, p.phone, p.avatar \r\n                    FROM users u \r\n                    LEFT JOIN profiles p ON u.id = p.user_id \r\n                    WHERE u.id = ? AND u.status = 'active'\r\n                ","bindings":[5],"connection":"default"}
+[2025-07-02 00:02:53] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:02:53] debug: Query executed {"execution_time_ms":16.43,"rows_returned":1}
+[2025-07-02 00:02:53] debug: SQL Query {"sql":"\r\n            SELECT p.name \r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:02:53] debug: Query executed {"execution_time_ms":0.7,"rows_returned":13}
+[2025-07-02 00:03:02] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:03:02] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:03:02] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:03:02] info: Request started {"method":"GET","uri":"\/api\/user","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:03:02] info: Route matched {"method":"GET","uri":"\/api\/user","pattern":"\/api\/user"}
+[2025-07-02 00:03:03] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:03:03] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:03:03] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:03:03] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:03:03] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test"}
+[2025-07-02 00:03:03] debug: SQL Query {"sql":"\r\n                    SELECT u.*, p.bio, p.phone, p.avatar \r\n                    FROM users u \r\n                    LEFT JOIN profiles p ON u.id = p.user_id \r\n                    WHERE u.id = ? AND u.status = 'active'\r\n                ","bindings":[5],"connection":"default"}
+[2025-07-02 00:03:03] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:03:03] debug: Query executed {"execution_time_ms":17.78,"rows_returned":1}
+[2025-07-02 00:03:03] debug: SQL Query {"sql":"\r\n            SELECT p.name \r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:03:03] debug: Query executed {"execution_time_ms":0.67,"rows_returned":13}
+[2025-07-02 00:03:07] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:03:07] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:03:07] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:03:07] info: Request started {"method":"GET","uri":"\/dashboard","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:03:07] info: Route matched {"method":"GET","uri":"\/dashboard","pattern":"\/dashboard"}
+[2025-07-02 00:03:08] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:03:08] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:03:08] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:03:08] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:03:08] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test"}
+[2025-07-02 00:03:08] debug: SQL Query {"sql":"\r\n                    SELECT u.*, p.bio, p.phone, p.avatar \r\n                    FROM users u \r\n                    LEFT JOIN profiles p ON u.id = p.user_id \r\n                    WHERE u.id = ? AND u.status = 'active'\r\n                ","bindings":[5],"connection":"default"}
+[2025-07-02 00:03:08] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:03:08] debug: Query executed {"execution_time_ms":27.07,"rows_returned":1}
+[2025-07-02 00:03:08] debug: SQL Query {"sql":"\r\n            SELECT p.name \r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:03:08] debug: Query executed {"execution_time_ms":1.1,"rows_returned":13}
+[2025-07-02 00:03:11] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:03:11] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:03:11] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:03:11] info: Request started {"method":"GET","uri":"\/test\/permissions","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:03:11] info: Route matched {"method":"GET","uri":"\/test\/permissions","pattern":"\/test\/permissions"}
+[2025-07-02 00:03:11] debug: SQL Query {"sql":"\r\n                    SELECT u.*, p.bio, p.phone, p.avatar \r\n                    FROM users u \r\n                    LEFT JOIN profiles p ON u.id = p.user_id \r\n                    WHERE u.id = ? AND u.status = 'active'\r\n                ","bindings":[5],"connection":"default"}
+[2025-07-02 00:03:11] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:03:11] debug: Query executed {"execution_time_ms":2.32,"rows_returned":1}
+[2025-07-02 00:03:11] debug: SQL Query {"sql":"\r\n            SELECT p.name \r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:03:11] debug: Query executed {"execution_time_ms":0.68,"rows_returned":13}
+[2025-07-02 00:03:11] debug: SQL Query {"sql":"\r\n            SELECT p.name, p.display_name, p.category\r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:03:11] debug: Query executed {"execution_time_ms":1.15,"rows_returned":13}
+[2025-07-02 00:03:15] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:03:15] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:03:15] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:03:15] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:03:15] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test"}
+[2025-07-02 00:03:15] debug: SQL Query {"sql":"\r\n                    SELECT u.*, p.bio, p.phone, p.avatar \r\n                    FROM users u \r\n                    LEFT JOIN profiles p ON u.id = p.user_id \r\n                    WHERE u.id = ? AND u.status = 'active'\r\n                ","bindings":[5],"connection":"default"}
+[2025-07-02 00:03:15] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:03:15] debug: Query executed {"execution_time_ms":14.11,"rows_returned":1}
+[2025-07-02 00:03:15] debug: SQL Query {"sql":"\r\n            SELECT p.name \r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:03:15] debug: Query executed {"execution_time_ms":0.59,"rows_returned":13}
+[2025-07-02 00:03:16] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:03:16] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:03:16] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:03:16] info: Request started {"method":"GET","uri":"\/test\/auth","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:03:16] info: Route matched {"method":"GET","uri":"\/test\/auth","pattern":"\/test\/auth"}
+[2025-07-02 00:03:16] debug: SQL Query {"sql":"\r\n                    SELECT u.*, p.bio, p.phone, p.avatar \r\n                    FROM users u \r\n                    LEFT JOIN profiles p ON u.id = p.user_id \r\n                    WHERE u.id = ? AND u.status = 'active'\r\n                ","bindings":[5],"connection":"default"}
+[2025-07-02 00:03:16] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:03:16] debug: Query executed {"execution_time_ms":26.5,"rows_returned":1}
+[2025-07-02 00:03:16] debug: SQL Query {"sql":"\r\n            SELECT p.name \r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:03:16] debug: Query executed {"execution_time_ms":0.44,"rows_returned":13}
+[2025-07-02 00:03:17] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:03:17] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:03:17] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:03:17] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:03:17] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test"}
+[2025-07-02 00:03:17] debug: SQL Query {"sql":"\r\n                    SELECT u.*, p.bio, p.phone, p.avatar \r\n                    FROM users u \r\n                    LEFT JOIN profiles p ON u.id = p.user_id \r\n                    WHERE u.id = ? AND u.status = 'active'\r\n                ","bindings":[5],"connection":"default"}
+[2025-07-02 00:03:17] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:03:17] debug: Query executed {"execution_time_ms":19.78,"rows_returned":1}
+[2025-07-02 00:03:17] debug: SQL Query {"sql":"\r\n            SELECT p.name \r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:03:17] debug: Query executed {"execution_time_ms":0.63,"rows_returned":13}
+[2025-07-02 00:06:22] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:06:22] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:06:22] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:06:22] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:06:22] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test","params":[]}
+[2025-07-02 00:06:22] debug: SQL Query {"sql":"\r\n                    SELECT u.*, p.bio, p.phone, p.avatar \r\n                    FROM users u \r\n                    LEFT JOIN profiles p ON u.id = p.user_id \r\n                    WHERE u.id = ? AND u.status = 'active'\r\n                ","bindings":[5],"connection":"default"}
+[2025-07-02 00:06:22] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:06:22] debug: Query executed {"execution_time_ms":1.83,"rows_returned":1}
+[2025-07-02 00:06:22] debug: SQL Query {"sql":"\r\n            SELECT p.name \r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:06:22] debug: Query executed {"execution_time_ms":0.45,"rows_returned":13}
+[2025-07-02 00:06:24] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:06:24] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:06:24] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:06:24] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:06:24] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test","params":[]}
+[2025-07-02 00:06:24] debug: SQL Query {"sql":"\r\n                    SELECT u.*, p.bio, p.phone, p.avatar \r\n                    FROM users u \r\n                    LEFT JOIN profiles p ON u.id = p.user_id \r\n                    WHERE u.id = ? AND u.status = 'active'\r\n                ","bindings":[5],"connection":"default"}
+[2025-07-02 00:06:24] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:06:24] debug: Query executed {"execution_time_ms":19.83,"rows_returned":1}
+[2025-07-02 00:06:24] debug: SQL Query {"sql":"\r\n            SELECT p.name \r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:06:24] debug: Query executed {"execution_time_ms":0.36,"rows_returned":13}
+[2025-07-02 00:06:25] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:06:25] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:06:25] info: Request started {"method":"GET","uri":"\/test\/database","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:06:25] info: Route matched {"method":"GET","uri":"\/test\/database","pattern":"\/test\/database","params":[]}
+[2025-07-02 00:06:25] debug: SQL Query {"sql":"SELECT 1 as test_connection","bindings":[],"connection":"default"}
+[2025-07-02 00:06:25] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:06:25] debug: Query executed {"execution_time_ms":27.29,"rows_returned":1}
+[2025-07-02 00:06:25] debug: SQL Query {"sql":"SHOW TABLES","bindings":[],"connection":"default"}
+[2025-07-02 00:06:25] debug: Query executed {"execution_time_ms":0.61,"rows_returned":8}
+[2025-07-02 00:06:25] debug: SQL Query {"sql":"SELECT COUNT(*) as count FROM users","bindings":[],"connection":"default"}
+[2025-07-02 00:06:25] debug: Query executed {"execution_time_ms":0.32,"rows_returned":1}
+[2025-07-02 00:06:25] info: Database test completed successfully {"tables_count":8,"user_count":7}
+[2025-07-02 00:06:25] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:06:25] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:06:25] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:06:25] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:06:25] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test","params":[]}
+[2025-07-02 00:06:25] debug: SQL Query {"sql":"\r\n                    SELECT u.*, p.bio, p.phone, p.avatar \r\n                    FROM users u \r\n                    LEFT JOIN profiles p ON u.id = p.user_id \r\n                    WHERE u.id = ? AND u.status = 'active'\r\n                ","bindings":[5],"connection":"default"}
+[2025-07-02 00:06:25] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:06:25] debug: Query executed {"execution_time_ms":16.25,"rows_returned":1}
+[2025-07-02 00:06:25] debug: SQL Query {"sql":"\r\n            SELECT p.name \r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:06:25] debug: Query executed {"execution_time_ms":0.78,"rows_returned":13}
+[2025-07-02 00:06:30] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:06:30] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:06:30] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:06:30] info: Request started {"method":"GET","uri":"\/dashboard","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:06:30] info: Route matched {"method":"GET","uri":"\/dashboard","pattern":"\/dashboard","params":[]}
+[2025-07-02 00:06:30] debug: Running middleware: auth
+[2025-07-02 00:06:30] debug: Resolved middleware class: App\Middleware\AuthenticateMiddleware
+[2025-07-02 00:08:22] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:08:22] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:08:22] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:08:22] info: Request started {"method":"GET","uri":"\/dashboard","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:08:22] info: Route matched {"method":"GET","uri":"\/dashboard","pattern":"\/dashboard","params":[]}
+[2025-07-02 00:08:22] debug: Running middleware: auth
+[2025-07-02 00:08:22] debug: Resolved middleware class: App\Middleware\AuthenticateMiddleware
+[2025-07-02 00:08:22] debug: AuthenticateMiddleware - Session check {"session_status":2,"user_id_exists":true,"user_id":5}
+[2025-07-02 00:08:22] debug: SQL Query {"sql":"SELECT * FROM users WHERE id = ? AND status = 'active'","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:22] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:08:22] debug: Query executed {"execution_time_ms":2.06,"rows_returned":1}
+[2025-07-02 00:08:22] debug: AuthenticateMiddleware - Success {"user_id":5,"user_email":"test.admin@koruphp.com"}
+[2025-07-02 00:08:22] debug: Middleware result {"middleware":"App\\Middleware\\AuthenticateMiddleware","result":true}
+[2025-07-02 00:08:22] debug: SQL Query {"sql":"SELECT * FROM users WHERE id = ?","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:22] debug: Query executed {"execution_time_ms":0.39,"rows_returned":1}
+[2025-07-02 00:08:22] debug: SQL Query {"sql":"SELECT COUNT(*) as count FROM users","bindings":[],"connection":"default"}
+[2025-07-02 00:08:22] debug: Query executed {"execution_time_ms":0.66,"rows_returned":1}
+[2025-07-02 00:08:22] debug: SQL Query {"sql":"SELECT COUNT(*) as count FROM users WHERE status = 'active'","bindings":[],"connection":"default"}
+[2025-07-02 00:08:22] debug: Query executed {"execution_time_ms":0.88,"rows_returned":1}
+[2025-07-02 00:08:27] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:08:27] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:08:27] info: Request started {"method":"GET","uri":"\/auth\/logout","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:08:27] info: Route matched {"method":"GET","uri":"\/auth\/logout","pattern":"\/auth\/logout","params":[]}
+[2025-07-02 00:08:27] info: User logged out {"user_id":5}
+[2025-07-02 00:08:27] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:08:27] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:08:27] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:08:27] info: Request started {"method":"GET","uri":"\/auth\/login","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:08:27] info: Route matched {"method":"GET","uri":"\/auth\/login","pattern":"\/auth\/login","params":[]}
+[2025-07-02 00:08:30] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:08:30] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:08:30] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:08:30] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:08:30] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test","params":[]}
+[2025-07-02 00:08:33] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:08:33] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:08:33] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:08:33] info: Request started {"method":"GET","uri":"\/auth\/login","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:08:33] info: Route matched {"method":"GET","uri":"\/auth\/login","pattern":"\/auth\/login","params":[]}
+[2025-07-02 00:08:41] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:08:41] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:08:41] info: Request started {"method":"POST","uri":"\/auth\/login","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:08:41] info: Route matched {"method":"POST","uri":"\/auth\/login","pattern":"\/auth\/login","params":[]}
+[2025-07-02 00:08:41] debug: SQL Query {"sql":"SELECT * FROM users WHERE email = ? AND status = 'active'","bindings":["test.admin@koruphp.com"],"connection":"default"}
+[2025-07-02 00:08:41] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:08:41] debug: Query executed {"execution_time_ms":20.8,"rows_returned":1}
+[2025-07-02 00:08:41] debug: SQL Execute {"sql":"UPDATE users SET last_login = NOW(), login_count = login_count + 1 WHERE id = ?","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:41] debug: Query executed {"execution_time_ms":2.19,"rows_affected":1}
+[2025-07-02 00:08:41] info: User logged in {"user_id":5,"email":"test.admin@koruphp.com"}
+[2025-07-02 00:08:41] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:08:41] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:08:41] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:08:41] info: Request started {"method":"GET","uri":"\/dashboard","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:08:41] info: Route matched {"method":"GET","uri":"\/dashboard","pattern":"\/dashboard","params":[]}
+[2025-07-02 00:08:41] debug: Running middleware: auth
+[2025-07-02 00:08:41] debug: Resolved middleware class: App\Middleware\AuthenticateMiddleware
+[2025-07-02 00:08:41] debug: AuthenticateMiddleware - Session check {"session_status":2,"user_id_exists":true,"user_id":5}
+[2025-07-02 00:08:41] debug: SQL Query {"sql":"SELECT * FROM users WHERE id = ? AND status = 'active'","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:41] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:08:41] debug: Query executed {"execution_time_ms":26.27,"rows_returned":1}
+[2025-07-02 00:08:41] debug: AuthenticateMiddleware - Success {"user_id":5,"user_email":"test.admin@koruphp.com"}
+[2025-07-02 00:08:41] debug: Middleware result {"middleware":"App\\Middleware\\AuthenticateMiddleware","result":true}
+[2025-07-02 00:08:41] debug: SQL Query {"sql":"SELECT * FROM users WHERE id = ?","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:41] debug: Query executed {"execution_time_ms":0.78,"rows_returned":1}
+[2025-07-02 00:08:41] debug: SQL Query {"sql":"SELECT COUNT(*) as count FROM users","bindings":[],"connection":"default"}
+[2025-07-02 00:08:41] debug: Query executed {"execution_time_ms":0.65,"rows_returned":1}
+[2025-07-02 00:08:41] debug: SQL Query {"sql":"SELECT COUNT(*) as count FROM users WHERE status = 'active'","bindings":[],"connection":"default"}
+[2025-07-02 00:08:41] debug: Query executed {"execution_time_ms":0.99,"rows_returned":1}
+[2025-07-02 00:08:48] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:08:48] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:08:48] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:08:48] info: Request started {"method":"GET","uri":"\/profile","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:08:48] info: Route matched {"method":"GET","uri":"\/profile","pattern":"\/profile","params":[]}
+[2025-07-02 00:08:48] debug: Running middleware: auth
+[2025-07-02 00:08:48] debug: Resolved middleware class: App\Middleware\AuthenticateMiddleware
+[2025-07-02 00:08:48] debug: AuthenticateMiddleware - Session check {"session_status":2,"user_id_exists":true,"user_id":5}
+[2025-07-02 00:08:48] debug: SQL Query {"sql":"SELECT * FROM users WHERE id = ? AND status = 'active'","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:48] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:08:48] debug: Query executed {"execution_time_ms":2.68,"rows_returned":1}
+[2025-07-02 00:08:48] debug: AuthenticateMiddleware - Success {"user_id":5,"user_email":"test.admin@koruphp.com"}
+[2025-07-02 00:08:48] debug: Middleware result {"middleware":"App\\Middleware\\AuthenticateMiddleware","result":true}
+[2025-07-02 00:08:51] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:08:51] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:08:51] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:08:51] info: Request started {"method":"GET","uri":"\/dashboard","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:08:51] info: Route matched {"method":"GET","uri":"\/dashboard","pattern":"\/dashboard","params":[]}
+[2025-07-02 00:08:51] debug: Running middleware: auth
+[2025-07-02 00:08:51] debug: Resolved middleware class: App\Middleware\AuthenticateMiddleware
+[2025-07-02 00:08:51] debug: AuthenticateMiddleware - Session check {"session_status":2,"user_id_exists":true,"user_id":5}
+[2025-07-02 00:08:51] debug: SQL Query {"sql":"SELECT * FROM users WHERE id = ? AND status = 'active'","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:51] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:08:51] debug: Query executed {"execution_time_ms":22.05,"rows_returned":1}
+[2025-07-02 00:08:51] debug: AuthenticateMiddleware - Success {"user_id":5,"user_email":"test.admin@koruphp.com"}
+[2025-07-02 00:08:51] debug: Middleware result {"middleware":"App\\Middleware\\AuthenticateMiddleware","result":true}
+[2025-07-02 00:08:51] debug: SQL Query {"sql":"SELECT * FROM users WHERE id = ?","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:51] debug: Query executed {"execution_time_ms":0.83,"rows_returned":1}
+[2025-07-02 00:08:51] debug: SQL Query {"sql":"SELECT COUNT(*) as count FROM users","bindings":[],"connection":"default"}
+[2025-07-02 00:08:51] debug: Query executed {"execution_time_ms":0.75,"rows_returned":1}
+[2025-07-02 00:08:51] debug: SQL Query {"sql":"SELECT COUNT(*) as count FROM users WHERE status = 'active'","bindings":[],"connection":"default"}
+[2025-07-02 00:08:51] debug: Query executed {"execution_time_ms":0.86,"rows_returned":1}
+[2025-07-02 00:08:52] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:08:52] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:08:52] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:08:52] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:08:52] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test","params":[]}
+[2025-07-02 00:08:52] debug: SQL Query {"sql":"\r\n                    SELECT u.*, p.bio, p.phone, p.avatar \r\n                    FROM users u \r\n                    LEFT JOIN profiles p ON u.id = p.user_id \r\n                    WHERE u.id = ? AND u.status = 'active'\r\n                ","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:52] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:08:52] debug: Query executed {"execution_time_ms":20.59,"rows_returned":1}
+[2025-07-02 00:08:52] debug: SQL Query {"sql":"\r\n            SELECT p.name \r\n            FROM permissions p\r\n            JOIN user_permissions up ON p.id = up.permission_id\r\n            WHERE up.user_id = ?\r\n        ","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:52] debug: Query executed {"execution_time_ms":0.87,"rows_returned":13}
+[2025-07-02 00:08:53] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:08:53] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:08:53] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:08:53] info: Request started {"method":"GET","uri":"\/dashboard","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:08:53] info: Route matched {"method":"GET","uri":"\/dashboard","pattern":"\/dashboard","params":[]}
+[2025-07-02 00:08:53] debug: Running middleware: auth
+[2025-07-02 00:08:53] debug: Resolved middleware class: App\Middleware\AuthenticateMiddleware
+[2025-07-02 00:08:53] debug: AuthenticateMiddleware - Session check {"session_status":2,"user_id_exists":true,"user_id":5}
+[2025-07-02 00:08:53] debug: SQL Query {"sql":"SELECT * FROM users WHERE id = ? AND status = 'active'","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:53] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:08:53] debug: Query executed {"execution_time_ms":18.71,"rows_returned":1}
+[2025-07-02 00:08:53] debug: AuthenticateMiddleware - Success {"user_id":5,"user_email":"test.admin@koruphp.com"}
+[2025-07-02 00:08:53] debug: Middleware result {"middleware":"App\\Middleware\\AuthenticateMiddleware","result":true}
+[2025-07-02 00:08:53] debug: SQL Query {"sql":"SELECT * FROM users WHERE id = ?","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:53] debug: Query executed {"execution_time_ms":0.32,"rows_returned":1}
+[2025-07-02 00:08:53] debug: SQL Query {"sql":"SELECT COUNT(*) as count FROM users","bindings":[],"connection":"default"}
+[2025-07-02 00:08:53] debug: Query executed {"execution_time_ms":0.32,"rows_returned":1}
+[2025-07-02 00:08:53] debug: SQL Query {"sql":"SELECT COUNT(*) as count FROM users WHERE status = 'active'","bindings":[],"connection":"default"}
+[2025-07-02 00:08:53] debug: Query executed {"execution_time_ms":0.27,"rows_returned":1}
+[2025-07-02 00:08:54] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:08:54] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:08:54] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:08:54] info: Request started {"method":"GET","uri":"\/admin","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:08:54] info: Route matched {"method":"GET","uri":"\/admin","pattern":"\/admin","params":[]}
+[2025-07-02 00:08:54] debug: Running middleware: auth
+[2025-07-02 00:08:54] debug: Resolved middleware class: App\Middleware\AuthenticateMiddleware
+[2025-07-02 00:08:54] debug: AuthenticateMiddleware - Session check {"session_status":2,"user_id_exists":true,"user_id":5}
+[2025-07-02 00:08:54] debug: SQL Query {"sql":"SELECT * FROM users WHERE id = ? AND status = 'active'","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:54] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:08:54] debug: Query executed {"execution_time_ms":16.54,"rows_returned":1}
+[2025-07-02 00:08:54] debug: AuthenticateMiddleware - Success {"user_id":5,"user_email":"test.admin@koruphp.com"}
+[2025-07-02 00:08:54] debug: Middleware result {"middleware":"App\\Middleware\\AuthenticateMiddleware","result":true}
+[2025-07-02 00:08:54] debug: Running middleware: admin
+[2025-07-02 00:08:54] debug: Resolved middleware class: App\Middleware\AdminMiddleware
+[2025-07-02 00:08:54] debug: SQL Query {"sql":"SELECT role FROM users WHERE id = ? AND status = 'active'","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:54] debug: Query executed {"execution_time_ms":0.77,"rows_returned":1}
+[2025-07-02 00:08:54] debug: Middleware result {"middleware":"App\\Middleware\\AdminMiddleware","result":true}
+[2025-07-02 00:08:56] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:08:56] debug: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-02 00:08:56] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-02 00:08:56] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-02 00:08:56] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-02 00:08:56] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-02 00:08:56] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-02 00:08:56] debug: Route added {"method":"GET","path":"\/test\/auth","handler":"Closure"}
+[2025-07-02 00:08:56] debug: Route added {"method":"GET","path":"\/test\/permissions","handler":"Closure"}
+[2025-07-02 00:08:56] debug: Route added {"method":"GET","path":"\/test\/create-test-users","handler":"Closure"}
+[2025-07-02 00:08:56] debug: Route added {"method":"GET","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:56] debug: Route added {"method":"POST","path":"\/auth\/login","handler":"Closure"}
+[2025-07-02 00:08:56] debug: Route added {"method":"GET","path":"\/auth\/logout","handler":"Closure"}
+[2025-07-02 00:08:56] debug: Route added {"method":"GET","path":"\/dashboard","handler":"Closure"}
+[2025-07-02 00:08:56] debug: Route added {"method":"GET","path":"\/profile","handler":"Closure"}
+[2025-07-02 00:08:57] debug: Route added {"method":"GET","path":"\/admin","handler":"Closure"}
+[2025-07-02 00:08:57] debug: Route added {"method":"GET","path":"\/api\/test","handler":"Closure"}
+[2025-07-02 00:08:57] debug: Route added {"method":"GET","path":"\/api\/user","handler":"Closure"}
+[2025-07-02 00:08:57] info: Request started {"method":"GET","uri":"\/dashboard","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-02 00:08:57] info: Route matched {"method":"GET","uri":"\/dashboard","pattern":"\/dashboard","params":[]}
+[2025-07-02 00:08:57] debug: Running middleware: auth
+[2025-07-02 00:08:57] debug: Resolved middleware class: App\Middleware\AuthenticateMiddleware
+[2025-07-02 00:08:57] debug: AuthenticateMiddleware - Session check {"session_status":2,"user_id_exists":true,"user_id":5}
+[2025-07-02 00:08:57] debug: SQL Query {"sql":"SELECT * FROM users WHERE id = ? AND status = 'active'","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:57] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:08:57] debug: Query executed {"execution_time_ms":2.24,"rows_returned":1}
+[2025-07-02 00:08:57] debug: AuthenticateMiddleware - Success {"user_id":5,"user_email":"test.admin@koruphp.com"}
+[2025-07-02 00:08:57] debug: Middleware result {"middleware":"App\\Middleware\\AuthenticateMiddleware","result":true}
+[2025-07-02 00:08:57] debug: SQL Query {"sql":"SELECT * FROM users WHERE id = ?","bindings":[5],"connection":"default"}
+[2025-07-02 00:08:57] debug: Query executed {"execution_time_ms":0.78,"rows_returned":1}
+[2025-07-02 00:08:57] debug: SQL Query {"sql":"SELECT COUNT(*) as count FROM users","bindings":[],"connection":"default"}
+[2025-07-02 00:08:57] debug: Query executed {"execution_time_ms":0.44,"rows_returned":1}
+[2025-07-02 00:08:57] debug: SQL Query {"sql":"SELECT COUNT(*) as count FROM users WHERE status = 'active'","bindings":[],"connection":"default"}
+[2025-07-02 00:08:57] debug: Query executed {"execution_time_ms":0.55,"rows_returned":1}

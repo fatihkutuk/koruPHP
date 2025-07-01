@@ -1,0 +1,259 @@
+[2025-07-01 22:51:31] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/test\/","handler":"TestController@index"}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/test\/error","handler":"TestController@errorTest"}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/test\/database","handler":"TestController@databaseTest"}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/test\/log","handler":"TestController@logTest"}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/test\/transaction","handler":"TestController@transactionTest"}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/test\/bulk","handler":"TestController@bulkTest"}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/test\/procedure","handler":"TestController@storedProcedureTest"}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/users\/","handler":"UserController@index"}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/users\/{id}","handler":"UserController@show"}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/users\/scada\/panel","handler":"UserController@scadaPanel"}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/api\/users","handler":"Closure"}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/api\/users\/{id}","handler":"Closure"}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/api\/sensor-data","handler":"Closure"}
+[2025-07-01 22:51:32] debug: Route added {"method":"GET","path":"\/api\/statistics","handler":"Closure"}
+[2025-07-01 22:51:32] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:51:32] warning: Route not found {"method":"GET","uri":"\/test"}
+[2025-07-01 22:51:39] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/test\/","handler":"TestController@index"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/test\/error","handler":"TestController@errorTest"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/test\/database","handler":"TestController@databaseTest"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/test\/log","handler":"TestController@logTest"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/test\/transaction","handler":"TestController@transactionTest"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/test\/bulk","handler":"TestController@bulkTest"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/test\/procedure","handler":"TestController@storedProcedureTest"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/users\/","handler":"UserController@index"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/users\/{id}","handler":"UserController@show"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/users\/scada\/panel","handler":"UserController@scadaPanel"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/api\/users","handler":"Closure"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/api\/users\/{id}","handler":"Closure"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/api\/sensor-data","handler":"Closure"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/api\/statistics","handler":"Closure"}
+[2025-07-01 22:51:39] info: Request started {"method":"GET","uri":"\/","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:51:39] info: Route matched {"method":"GET","uri":"\/","pattern":"\/","params":[]}
+[2025-07-01 22:51:39] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/test\/","handler":"TestController@index"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/test\/error","handler":"TestController@errorTest"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/test\/database","handler":"TestController@databaseTest"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/test\/log","handler":"TestController@logTest"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/test\/transaction","handler":"TestController@transactionTest"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/test\/bulk","handler":"TestController@bulkTest"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/test\/procedure","handler":"TestController@storedProcedureTest"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/users\/","handler":"UserController@index"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/users\/{id}","handler":"UserController@show"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/users\/scada\/panel","handler":"UserController@scadaPanel"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/api\/users","handler":"Closure"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/api\/users\/{id}","handler":"Closure"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/api\/sensor-data","handler":"Closure"}
+[2025-07-01 22:51:39] debug: Route added {"method":"GET","path":"\/api\/statistics","handler":"Closure"}
+[2025-07-01 22:51:39] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:51:39] warning: Route not found {"method":"GET","uri":"\/test"}
+[2025-07-01 22:51:40] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/test\/","handler":"TestController@index"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/test\/error","handler":"TestController@errorTest"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/test\/database","handler":"TestController@databaseTest"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/test\/log","handler":"TestController@logTest"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/test\/transaction","handler":"TestController@transactionTest"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/test\/bulk","handler":"TestController@bulkTest"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/test\/procedure","handler":"TestController@storedProcedureTest"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/users\/","handler":"UserController@index"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/users\/{id}","handler":"UserController@show"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/users\/scada\/panel","handler":"UserController@scadaPanel"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/api\/users","handler":"Closure"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/api\/users\/{id}","handler":"Closure"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/api\/sensor-data","handler":"Closure"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/api\/statistics","handler":"Closure"}
+[2025-07-01 22:51:40] info: Request started {"method":"GET","uri":"\/","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:51:40] info: Route matched {"method":"GET","uri":"\/","pattern":"\/","params":[]}
+[2025-07-01 22:51:40] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/test\/","handler":"TestController@index"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/test\/error","handler":"TestController@errorTest"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/test\/database","handler":"TestController@databaseTest"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/test\/log","handler":"TestController@logTest"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/test\/transaction","handler":"TestController@transactionTest"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/test\/bulk","handler":"TestController@bulkTest"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/test\/procedure","handler":"TestController@storedProcedureTest"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/users\/","handler":"UserController@index"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/users\/{id}","handler":"UserController@show"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/users\/scada\/panel","handler":"UserController@scadaPanel"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/api\/users","handler":"Closure"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/api\/users\/{id}","handler":"Closure"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/api\/sensor-data","handler":"Closure"}
+[2025-07-01 22:51:40] debug: Route added {"method":"GET","path":"\/api\/statistics","handler":"Closure"}
+[2025-07-01 22:51:40] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:51:40] warning: Route not found {"method":"GET","uri":"\/test"}
+[2025-07-01 22:51:42] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/test\/","handler":"TestController@index"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/test\/error","handler":"TestController@errorTest"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/test\/database","handler":"TestController@databaseTest"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/test\/log","handler":"TestController@logTest"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/test\/transaction","handler":"TestController@transactionTest"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/test\/bulk","handler":"TestController@bulkTest"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/test\/procedure","handler":"TestController@storedProcedureTest"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/users\/","handler":"UserController@index"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/users\/{id}","handler":"UserController@show"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/users\/scada\/panel","handler":"UserController@scadaPanel"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/api\/users","handler":"Closure"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/api\/users\/{id}","handler":"Closure"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/api\/sensor-data","handler":"Closure"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/api\/statistics","handler":"Closure"}
+[2025-07-01 22:51:42] info: Request started {"method":"GET","uri":"\/","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:51:42] info: Route matched {"method":"GET","uri":"\/","pattern":"\/","params":[]}
+[2025-07-01 22:51:42] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/test\/","handler":"TestController@index"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/test\/error","handler":"TestController@errorTest"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/test\/database","handler":"TestController@databaseTest"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/test\/log","handler":"TestController@logTest"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/test\/transaction","handler":"TestController@transactionTest"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/test\/bulk","handler":"TestController@bulkTest"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/test\/procedure","handler":"TestController@storedProcedureTest"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/users\/","handler":"UserController@index"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/users\/{id}","handler":"UserController@show"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/users\/scada\/panel","handler":"UserController@scadaPanel"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/api\/users","handler":"Closure"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/api\/users\/{id}","handler":"Closure"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/api\/sensor-data","handler":"Closure"}
+[2025-07-01 22:51:42] debug: Route added {"method":"GET","path":"\/api\/statistics","handler":"Closure"}
+[2025-07-01 22:51:42] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:51:42] warning: Route not found {"method":"GET","uri":"\/test"}
+[2025-07-01 22:54:01] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:54:01] info: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-01 22:54:01] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:54:01] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-01 22:54:01] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-01 22:54:01] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-01 22:54:01] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-01 22:54:01] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:54:01] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test","params":[]}
+[2025-07-01 22:55:28] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:55:28] info: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-01 22:55:28] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:55:28] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-01 22:55:28] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-01 22:55:28] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-01 22:55:28] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-01 22:55:28] info: Request started {"method":"GET","uri":"\/test\/database","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:55:28] info: Route matched {"method":"GET","uri":"\/test\/database","pattern":"\/test\/database","params":[]}
+[2025-07-01 22:55:28] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-01 22:55:34] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:55:34] info: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-01 22:55:34] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:55:34] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-01 22:55:34] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-01 22:55:34] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-01 22:55:34] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-01 22:55:34] info: Request started {"method":"GET","uri":"\/test\/database","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:55:34] info: Route matched {"method":"GET","uri":"\/test\/database","pattern":"\/test\/database","params":[]}
+[2025-07-01 22:55:34] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-01 22:55:49] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:55:49] info: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-01 22:55:49] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:55:49] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-01 22:55:49] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-01 22:55:49] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-01 22:55:49] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-01 22:55:49] info: Request started {"method":"GET","uri":"\/test\/log","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:55:49] info: Route matched {"method":"GET","uri":"\/test\/log","pattern":"\/test\/log","params":[]}
+[2025-07-01 22:55:49] info: Test log mesajı
+[2025-07-01 22:56:05] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:56:05] info: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-01 22:56:05] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:56:05] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-01 22:56:05] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-01 22:56:05] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-01 22:56:05] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-01 22:56:05] info: Request started {"method":"GET","uri":"\/test\/error","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:56:05] info: Route matched {"method":"GET","uri":"\/test\/error","pattern":"\/test\/error","params":[]}
+[2025-07-01 22:56:27] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:56:27] info: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-01 22:56:27] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:56:27] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-01 22:56:27] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-01 22:56:27] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-01 22:56:27] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-01 22:56:27] info: Request started {"method":"GET","uri":"\/test\/database-full","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:56:27] warning: Route not found {"method":"GET","uri":"\/test\/database-full"}
+[2025-07-01 22:56:45] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:56:45] info: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-01 22:56:45] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:56:45] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-01 22:56:45] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-01 22:56:45] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-01 22:56:45] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-01 22:56:45] info: Request started {"method":"GET","uri":"\/test\/log-levels","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:56:45] warning: Route not found {"method":"GET","uri":"\/test\/log-levels"}
+[2025-07-01 22:58:30] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:58:30] info: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-01 22:58:30] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:58:30] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-01 22:58:30] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-01 22:58:30] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-01 22:58:30] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-01 22:58:30] debug: Route added {"method":"GET","path":"\/test\/database-full","handler":"Closure"}
+[2025-07-01 22:58:30] debug: Route added {"method":"GET","path":"\/test\/log-levels","handler":"Closure"}
+[2025-07-01 22:58:30] debug: Route added {"method":"GET","path":"\/test\/env","handler":"Closure"}
+[2025-07-01 22:58:30] info: Request started {"method":"GET","uri":"\/test\/env","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:58:30] info: Route matched {"method":"GET","uri":"\/test\/env","pattern":"\/test\/env","params":[]}
+[2025-07-01 22:58:50] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:58:50] info: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-01 22:58:50] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:58:50] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-01 22:58:50] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-01 22:58:50] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-01 22:58:50] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-01 22:58:50] debug: Route added {"method":"GET","path":"\/test\/database-full","handler":"Closure"}
+[2025-07-01 22:58:50] debug: Route added {"method":"GET","path":"\/test\/log-levels","handler":"Closure"}
+[2025-07-01 22:58:50] debug: Route added {"method":"GET","path":"\/test\/env","handler":"Closure"}
+[2025-07-01 22:58:50] info: Request started {"method":"GET","uri":"\/test","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:58:50] info: Route matched {"method":"GET","uri":"\/test","pattern":"\/test","params":[]}
+[2025-07-01 22:59:25] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:59:25] info: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-01 22:59:25] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:59:25] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-01 22:59:25] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-01 22:59:25] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-01 22:59:25] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-01 22:59:25] debug: Route added {"method":"GET","path":"\/test\/database-full","handler":"Closure"}
+[2025-07-01 22:59:25] debug: Route added {"method":"GET","path":"\/test\/log-levels","handler":"Closure"}
+[2025-07-01 22:59:25] debug: Route added {"method":"GET","path":"\/test\/env","handler":"Closure"}
+[2025-07-01 22:59:25] info: Request started {"method":"GET","uri":"\/test\/error","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:59:25] info: Route matched {"method":"GET","uri":"\/test\/error","pattern":"\/test\/error","params":[]}
+[2025-07-01 22:59:40] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:59:40] info: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-01 22:59:40] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:59:40] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-01 22:59:40] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-01 22:59:40] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-01 22:59:40] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-01 22:59:40] debug: Route added {"method":"GET","path":"\/test\/database-full","handler":"Closure"}
+[2025-07-01 22:59:40] debug: Route added {"method":"GET","path":"\/test\/log-levels","handler":"Closure"}
+[2025-07-01 22:59:40] debug: Route added {"method":"GET","path":"\/test\/env","handler":"Closure"}
+[2025-07-01 22:59:40] info: Request started {"method":"GET","uri":"\/test\/database-full","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:59:40] info: Route matched {"method":"GET","uri":"\/test\/database-full","pattern":"\/test\/database-full","params":[]}
+[2025-07-01 22:59:40] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-01 22:59:40] info: Full database test completed {"raw_sql":[{"test":1}],"query_builder":[{"id":1,"name":"Ahmet Yılmaz","email":"ahmet@example.com"},{"id":2,"name":"Ayşe Demir","email":"ayse@example.com"},{"id":3,"name":"Mehmet Kaya","email":"mehmet@example.com"}],"pdo_direct":"Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'current_time' at line 1"}
+[2025-07-01 22:59:51] info: Application initialized {"environment":"production","debug":false}
+[2025-07-01 22:59:51] info: Loading routes from: C:\koruPHP\core/../modules/web/routes.php
+[2025-07-01 22:59:51] debug: Route added {"method":"GET","path":"\/","handler":"Closure"}
+[2025-07-01 22:59:51] debug: Route added {"method":"GET","path":"\/test","handler":"Closure"}
+[2025-07-01 22:59:51] debug: Route added {"method":"GET","path":"\/test\/database","handler":"Closure"}
+[2025-07-01 22:59:51] debug: Route added {"method":"GET","path":"\/test\/log","handler":"Closure"}
+[2025-07-01 22:59:51] debug: Route added {"method":"GET","path":"\/test\/error","handler":"Closure"}
+[2025-07-01 22:59:51] debug: Route added {"method":"GET","path":"\/test\/database-full","handler":"Closure"}
+[2025-07-01 22:59:51] debug: Route added {"method":"GET","path":"\/test\/log-levels","handler":"Closure"}
+[2025-07-01 22:59:51] debug: Route added {"method":"GET","path":"\/test\/env","handler":"Closure"}
+[2025-07-01 22:59:51] info: Request started {"method":"GET","uri":"\/test\/log-levels","user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36","ip":"::1"}
+[2025-07-01 22:59:51] info: Route matched {"method":"GET","uri":"\/test\/log-levels","pattern":"\/test\/log-levels","params":[]}
+[2025-07-01 22:59:51] warning: ⚠️ Warning level test
+[2025-07-01 22:59:51] notice: 📢 Notice level test
+[2025-07-01 22:59:51] info: ℹ️ Info level test
+[2025-07-01 22:59:51] debug: 🔍 Debug level test
+[2025-07-01 22:59:51] info: Test log with context {"test_type":"log_levels","timestamp":"2025-07-01 22:59:51","environment":"production"}

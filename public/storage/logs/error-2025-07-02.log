@@ -1,0 +1,6 @@
+[2025-07-02 00:01:52] error: Middleware class not found: App\Middleware\AuthenticateMiddleware
+[2025-07-02 00:02:50] error: Middleware class not found: App\Middleware\AuthenticateMiddleware
+[2025-07-02 00:02:52] error: Middleware class not found: App\Middleware\AuthenticateMiddleware
+[2025-07-02 00:03:02] error: Middleware class not found: App\Middleware\AuthenticateMiddleware
+[2025-07-02 00:03:07] error: Middleware class not found: App\Middleware\AuthenticateMiddleware
+[2025-07-02 00:06:30] error: Middleware class not found: App\Middleware\AuthenticateMiddleware

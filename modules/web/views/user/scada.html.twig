@@ -1,0 +1,183 @@
+{% extends "@web/layouts/app.html.twig" %}
+
+{% block content %}
+<div class="page-header">
+    <h2>{{ title|default('SCADA Panel') }}</h2>
+    <div class="scada-status">
+        <span class="status-indicator online"></span>
+        <span>Sistem Aktif - {{ "now"|date("d.m.Y H:i:s") }}</span>
+    </div>
+</div>
+
+<div class="scada-dashboard">
+    <!-- İstatistik Kartları -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Toplam Sensör</h3>
+            <div class="stat-value">{{ stats.total_sensors|default(0) }}</div>
+        </div>
+        <div class="stat-card">
+            <h3>Aktif Sensör</h3>
+            <div class="stat-value">{{ stats.active_sensors|default(0) }}</div>
+        </div>
+        <div class="stat-card">
+            <h3>Kritik Uyarı</h3>
+            <div class="stat-value critical">{{ stats.critical_alerts|default(0) }}</div>
+        </div>
+        <div class="stat-card">
+            <h3>Son Güncelleme</h3>
+            <div class="stat-value small">{{ stats.last_update|default('Bilinmiyor') }}</div>
+        </div>
+    </div>
+
+    <!-- SCADA Gauges -->
+    <div class="gauge-container">
+        <div class="scada-gauge" data-value="{{ gaugeData.temperature|default(0) }}" data-max="50" data-unit="°C">
+            <div class="gauge-circle">
+                <div class="gauge-needle"></div>
+            </div>
+            <div class="gauge-value">
+                <span class="value">{{ gaugeData.temperature|default(0) }}</span>
+                <span class="unit">°C</span>
+            </div>
+            <div class="gauge-label">Sıcaklık</div>
+        </div>
+
+        <div class="scada-gauge" data-value="{{ gaugeData.pressure|default(0) }}" data-max="300" data-unit="bar">
+            <div class="gauge-circle">
+                <div class="gauge-needle"></div>
+            </div>
+            <div class="gauge-value">
+                <span class="value">{{ gaugeData.pressure|default(0) }}</span>
+                <span class="unit">bar</span>
+            </div>
+            <div class="gauge-label">Basınç</div>
+        </div>
+
+        <div class="scada-gauge" data-value="{{ gaugeData.humidity|default(0) }}" data-max="100" data-unit="%">
+            <div class="gauge-circle">
+                <div class="gauge-needle"></div>
+            </div>
+            <div class="gauge-value">
+                <span class="value">{{ gaugeData.humidity|default(0) }}</span>
+                <span class="unit">%</span>
+            </div>
+            <div class="gauge-label">Nem</div>
+        </div>
+
+        <div class="scada-gauge" data-value="{{ gaugeData.flow_rate|default(0) }}" data-max="200" data-unit="L/min">
+            <div class="gauge-circle">
+                <div class="gauge-needle"></div>
+            </div>
+            <div class="gauge-value">
+                <span class="value">{{ gaugeData.flow_rate|default(0) }}</span>
+                <span class="unit">L/min</span>
+            </div>
+            <div class="gauge-label">Akış Hızı</div>
+        </div>
+    </div>
+
+    <!-- Canlı Grafik (JavaScript ile güncellenecek) -->
+    <div class="chart-container">
+        <h3>Canlı Sensör Grafikleri</h3>
+        <div class="charts-grid">
+            <div class="chart-card">
+                <canvas id="temperatureChart" width="400" height="200"></canvas>
+            </div>
+            <div class="chart-card">
+                <canvas id="pressureChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sensör Verileri Tablosu -->
+    {% if sensorData is not empty %}
+        <div class="sensor-data-table">
+            <h3>Son Sensör Verileri</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Sensör ID</th>
+                        <th>Tip</th>
+                        <th>Değer</th>
+                        <th>Durum</th>
+                        <th>Lokasyon</th>
+                        <th>Zaman</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for sensor in sensorData %}
+                        <tr class="{% if sensor.status == 'critical' %}row-critical{% elseif sensor.status == 'warning' %}row-warning{% endif %}">
+                            <td><strong>{{ sensor.sensor_id }}</strong></td>
+                            <td>{{ sensor.sensor_type|title }}</td>
+                            <td>{{ sensor.value }} {{ sensor.unit }}</td>
+                            <td>
+                                <span class="status status-{{ sensor.status }}">
+                                    {% if sensor.status == 'critical' %}🔴{% elseif sensor.status == 'warning' %}🟡{% else %}🟢{% endif %}
+                                    {{ sensor.status|title }}
+                                </span>
+                            </td>
+                            <td>{{ sensor.location|default('Bilinmiyor') }}</td>
+                            <td>{{ sensor.created_at }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <div class="alert alert-info">
+            <p>Henüz sensör verisi bulunmuyor.</p>
+        </div>
+    {% endif %}
+
+    <!-- Sistem Durumu -->
+    <div class="system-status">
+        <h3>Sistem Durumu</h3>
+        <div class="status-grid">
+            <div class="status-item">
+                <span class="status-indicator online"></span>
+                <span>Veritabanı Bağlantısı</span>
+            </div>
+            <div class="status-item">
+                <span class="status-indicator online"></span>
+                <span>Sensör Ağı</span>
+            </div>
+            <div class="status-item">
+                <span class="status-indicator {{ stats.critical_alerts > 0 ? 'critical' : 'online' }}"></span>
+                <span>Alarm Sistemi</span>
+            </div>
+            <div class="status-item">
+                <span class="status-indicator online"></span>
+                <span>Backup Sistemi</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// SCADA Panel için ek JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    // Gauge değerlerini güncelle
+    updateGauges();
+    
+    // Her 5 saniyede bir güncelle
+    setInterval(function() {
+        updateGauges();
+    }, 5000);
+    
+    function updateGauges() {
+        document.querySelectorAll('.scada-gauge').forEach(function(gauge) {
+            const value = parseFloat(gauge.dataset.value);
+            const max = parseFloat(gauge.dataset.max);
+            const percentage = (value / max) * 100;
+            
+            const needle = gauge.querySelector('.gauge-needle');
+            if (needle) {
+                const rotation = (percentage / 100) * 180 - 90;
+                needle.style.transform = `rotate(${rotation}deg)`;
+            }
+        });
+    }
+});
+</script>
+{% endblock %}
