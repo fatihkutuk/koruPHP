@@ -12,32 +12,41 @@ class AuthenticateMiddleware
                 session_start();
             }
             
+            // Mevcut URL'i al
+            $currentUrl = $_SERVER['REQUEST_URI'] ?? '/';
+            
+            // Login sayfalarını kontrol et - bunları redirect etme
+            if ($this->isAuthPage($currentUrl)) {
+                return true; // Middleware'i geç
+            }
+            
             // Debug log
             logger()->debug("AuthenticateMiddleware - Session check", [
                 'session_status' => session_status(),
                 'user_id_exists' => isset($_SESSION['user_id']),
-                'user_id' => $_SESSION['user_id'] ?? null
+                'user_id' => $_SESSION['user_id'] ?? null,
+                'current_url' => $currentUrl
             ]);
             
             // Kullanıcı giriş yapmış mı kontrol et
             if (!isset($_SESSION['user_id'])) {
-                $this->handleUnauthenticated();
+                $this->handleUnauthenticated($currentUrl);
                 return false;
             }
             
-            // Kullanıcı hala aktif mi kontrol et
-            $user = sql_one("SELECT * FROM users WHERE id = ? AND status = 'active'", [$_SESSION['user_id']]);
+            // Kullanıcı hala mevcut mu kontrol et
+            $user = sql_one("SELECT * FROM users WHERE id = ?", [$_SESSION['user_id']]);
             
             if (!$user) {
                 // Session'ı temizle
                 unset($_SESSION['user_id']);
-                $this->handleUnauthenticated();
+                $this->handleUnauthenticated($currentUrl);
                 return false;
             }
             
             logger()->debug("AuthenticateMiddleware - Success", [
                 'user_id' => $user['id'],
-                'user_email' => $user['email']
+                'user_email' => $user['email'] ?? 'unknown'
             ]);
             
             return true;
@@ -54,8 +63,34 @@ class AuthenticateMiddleware
         }
     }
     
-    private function handleUnauthenticated(): void
+    /**
+     * Auth sayfalarını kontrol et
+     */
+    private function isAuthPage(string $url): bool
     {
+        $authPaths = [
+            '/auth/login',
+            '/auth/register',
+            '/auth/forgot-password',
+            '/test/create-test-users'
+        ];
+        
+        foreach ($authPaths as $path) {
+            if (str_starts_with($url, $path)) {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+    
+    private function handleUnauthenticated(string $currentUrl = '/'): void
+    {
+        // Redirect döngüsünü önle
+        if (str_starts_with($currentUrl, '/auth/login')) {
+            $currentUrl = '/dashboard'; // Varsayılan hedef
+        }
+        
         // AJAX request kontrolü
         if ($this->isAjaxRequest()) {
             http_response_code(401);
@@ -67,8 +102,13 @@ class AuthenticateMiddleware
             ]);
         } else {
             // Normal request - login sayfasına yönlendir
-            $currentUrl = $_SERVER['REQUEST_URI'] ?? '/';
-            $redirectUrl = '/auth/login?redirect=' . urlencode($currentUrl);
+            $redirectUrl = '/auth/login';
+            
+            // Sadece dashboard dışındaki sayfalar için redirect parametresi ekle
+            if ($currentUrl !== '/' && $currentUrl !== '/dashboard' && !str_starts_with($currentUrl, '/auth/')) {
+                $redirectUrl .= '?redirect=' . urlencode($currentUrl);
+            }
+            
             header("Location: {$redirectUrl}");
             exit;
         }

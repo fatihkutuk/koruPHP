@@ -242,7 +242,8 @@ class Router
         $aliases = [
             'auth' => 'App\\Middleware\\AuthenticateMiddleware',
             'admin' => 'App\\Middleware\\AdminMiddleware',
-            'guest' => 'App\\Middleware\\GuestMiddleware'
+            'guest' => 'App\\Middleware\\GuestMiddleware',
+            'api.auth' => 'App\\Middleware\\ApiAuthMiddleware' // YENİ
         ];
         
         // Alias varsa döndür, yoksa olduğu gibi döndür

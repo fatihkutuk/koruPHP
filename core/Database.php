@@ -289,7 +289,10 @@ class Database
     
     private function handleDatabaseException(PDOException $e, string $sql, array $bindings): void
     {
-        $exception = new DatabaseException($e->getMessage(), $e->getCode(), $e);
+        // PDO error code'u int'e çevir
+        $errorCode = is_numeric($e->getCode()) ? (int)$e->getCode() : 0;
+        
+        $exception = new DatabaseException($e->getMessage(), $errorCode, $e);
         $exception->setSqlInfo($sql, $bindings);
         
         $this->logger->error("Database error", [
@@ -301,7 +304,6 @@ class Database
         
         throw $exception;
     }
-    
     /**
      * Bağlantı durumunu kontrol et
      */

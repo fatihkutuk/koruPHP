@@ -6,10 +6,14 @@ class KoruException extends \Exception
 {
     protected array $context = [];
     
-    public function __construct(string $message = "", int $code = 0, \Throwable $previous = null, array $context = [])
+    public function __construct(string $message = "", int $code = 0, ?\Throwable $previous = null)
     {
+        // Code parametresi string gelirse int'e çevir
+        if (is_string($code)) {
+            $code = 0; // Varsayılan değer
+        }
+        
         parent::__construct($message, $code, $previous);
-        $this->context = $context;
     }
     
     public function getContext(): array

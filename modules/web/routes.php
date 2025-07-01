@@ -7,7 +7,7 @@ $router->get('/', function() {
     redirect('/test');
 });
 
-// Test rotaları (herkese açık - middleware yok)
+// Public routes (middleware YOK!)
 $router->get('/test', function() {
     $controller = new \App\Web\Controllers\TestController();
     $controller->index();
@@ -43,7 +43,17 @@ $router->get('/test/create-test-users', function() {
     $controller->createTestUsers();
 });
 
-// Auth rotaları
+$router->get('/test/api-demo', function() {
+    $controller = new \App\Web\Controllers\TestController();
+    $controller->apiDemo();
+});
+
+$router->get('/test/api-login-test', function() {
+    $controller = new \App\Web\Controllers\TestController();
+    $controller->apiLoginTest();
+});
+
+// Auth rotaları (middleware YOK!)
 $router->get('/auth/login', function() {
     $controller = new \App\Web\Controllers\AuthController();
     $controller->showLogin();
@@ -59,7 +69,7 @@ $router->get('/auth/logout', function() {
     $controller->logout();
 });
 
-// Dashboard (authentication gerekli)
+// Protected routes (middleware VAR!)
 $router->group(['middleware' => ['auth']], function($router) {
     $router->get('/dashboard', function() {
         $controller = new \App\Web\Controllers\DashboardController();
@@ -73,7 +83,7 @@ $router->group(['middleware' => ['auth']], function($router) {
     });
 });
 
-// Admin rotaları
+// Admin routes
 $router->group(['middleware' => ['auth', 'admin']], function($router) {
     $router->get('/admin', function() {
         echo "<h1>Admin Panel</h1><p>Bu sayfa admin yetkisi gerektirir.</p>";

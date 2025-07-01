@@ -1,0 +1,155 @@
+[2025-07-02 00:53:27] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:53:27] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"\r\n        CREATE TABLE IF NOT EXISTS users (\r\n            id INT AUTO_INCREMENT PRIMARY KEY,\r\n            name VARCHAR(255) NOT NULL,\r\n            email VARCHAR(255) UNIQUE NOT NULL,\r\n            password VARCHAR(255) NOT NULL,\r\n            role ENUM('admin', 'user', 'operator', 'viewer') DEFAULT 'user',\r\n            status ENUM('active', 'inactive', 'banned') DEFAULT 'active',\r\n            email_verified_at DATETIME NULL,\r\n            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP\r\n        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\r\n    ","bindings":[],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.66,"rows_affected":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"\r\n        CREATE TABLE IF NOT EXISTS profiles (\r\n            id INT AUTO_INCREMENT PRIMARY KEY,\r\n            user_id INT NOT NULL,\r\n            bio TEXT NULL,\r\n            phone VARCHAR(20) NULL,\r\n            avatar VARCHAR(255) NULL,\r\n            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\r\n            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE\r\n        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\r\n    ","bindings":[],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":15.02,"rows_affected":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"\r\n        CREATE TABLE IF NOT EXISTS permissions (\r\n            id INT AUTO_INCREMENT PRIMARY KEY,\r\n            name VARCHAR(100) UNIQUE NOT NULL,\r\n            description TEXT NULL,\r\n            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\r\n        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\r\n    ","bindings":[],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":13.79,"rows_affected":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"\r\n        CREATE TABLE IF NOT EXISTS user_permissions (\r\n            id INT AUTO_INCREMENT PRIMARY KEY,\r\n            user_id INT NOT NULL,\r\n            permission_id INT NOT NULL,\r\n            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,\r\n            FOREIGN KEY (permission_id) REFERENCES permissions(id) ON DELETE CASCADE,\r\n            UNIQUE KEY unique_user_permission (user_id, permission_id)\r\n        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\r\n    ","bindings":[],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":14.7,"rows_affected":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"\r\n        CREATE TABLE IF NOT EXISTS api_tokens (\r\n            id INT AUTO_INCREMENT PRIMARY KEY,\r\n            user_id INT NOT NULL,\r\n            token VARCHAR(255) UNIQUE NOT NULL,\r\n            name VARCHAR(100) DEFAULT 'API Token',\r\n            expires_at DATETIME NULL,\r\n            last_used_at DATETIME NULL,\r\n            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE\r\n        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\r\n    ","bindings":[],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.7,"rows_affected":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"\r\n        CREATE TABLE IF NOT EXISTS web_sessions (\r\n            id VARCHAR(128) PRIMARY KEY,\r\n            user_id INT NOT NULL,\r\n            remember_token VARCHAR(255) NULL,\r\n            ip_address VARCHAR(45) NULL,\r\n            user_agent TEXT NULL,\r\n            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n            expires_at DATETIME NULL,\r\n            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE\r\n        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\r\n    ","bindings":[],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.75,"rows_affected":0}
+[2025-07-02 00:53:27] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["view_users"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.79,"rows_returned":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["view_users","Kullanıcıları görüntüleme"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.97,"rows_affected":1}
+[2025-07-02 00:53:27] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["create_users"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.29,"rows_returned":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["create_users","Kullanıcı oluşturma"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":1.26,"rows_affected":1}
+[2025-07-02 00:53:27] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["edit_users"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.76,"rows_returned":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["edit_users","Kullanıcı düzenleme"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":1.08,"rows_affected":1}
+[2025-07-02 00:53:27] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["delete_users"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.24,"rows_returned":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["delete_users","Kullanıcı silme"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.87,"rows_affected":1}
+[2025-07-02 00:53:27] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["view_dashboard"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.26,"rows_returned":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["view_dashboard","Dashboard görüntüleme"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":1,"rows_affected":1}
+[2025-07-02 00:53:27] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["view_reports"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.53,"rows_returned":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["view_reports","Raporları görüntüleme"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":1.09,"rows_affected":1}
+[2025-07-02 00:53:27] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["manage_permissions"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.3,"rows_returned":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["manage_permissions","İzin yönetimi"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.88,"rows_affected":1}
+[2025-07-02 00:53:27] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["system_admin"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.24,"rows_returned":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["system_admin","Sistem yönetimi"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.75,"rows_affected":1}
+[2025-07-02 00:53:27] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["api_access"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.2,"rows_returned":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["api_access","API erişimi"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.86,"rows_affected":1}
+[2025-07-02 00:53:27] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["scada_view"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.21,"rows_returned":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["scada_view","SCADA panel görüntüleme"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":1.24,"rows_affected":1}
+[2025-07-02 00:53:27] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["scada_control"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.23,"rows_returned":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["scada_control","SCADA kontrol"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.74,"rows_affected":1}
+[2025-07-02 00:53:27] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["view_logs"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.31,"rows_returned":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["view_logs","Log görüntüleme"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.76,"rows_affected":1}
+[2025-07-02 00:53:27] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["export_data"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.23,"rows_returned":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["export_data","Veri dışa aktarma"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":0.94,"rows_affected":1}
+[2025-07-02 00:53:27] debug: SQL Query {"sql":"SELECT id FROM users WHERE email = ?","bindings":["test.admin@koruphp.com"],"connection":"default"}
+[2025-07-02 00:53:27] debug: Query executed {"execution_time_ms":1.1,"rows_returned":0}
+[2025-07-02 00:53:27] debug: SQL Execute {"sql":"\r\n                INSERT INTO users (name, email, password, role, status, email_verified_at, created_at) \r\n                VALUES (?, ?, ?, ?, 'active', NOW(), NOW())\r\n            ","bindings":["Test Admin","test.admin@koruphp.com","$2y$10$Zm2vO7dZaDwf4nQdI.61Ee3HJGCPIsT\/ZJiM1DRu2HUpzevIz51Va","admin"],"connection":"default"}
+[2025-07-02 00:53:45] info: Application initialized {"environment":"production","debug":true}
+[2025-07-02 00:53:45] info: Database connection established {"connection":"default","driver":"mysql","host":"localhost","database":"koruPHP"}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"\r\n        CREATE TABLE IF NOT EXISTS users (\r\n            id INT AUTO_INCREMENT PRIMARY KEY,\r\n            name VARCHAR(255) NOT NULL,\r\n            email VARCHAR(255) UNIQUE NOT NULL,\r\n            password VARCHAR(255) NOT NULL,\r\n            role ENUM('admin', 'user', 'operator', 'viewer') DEFAULT 'user',\r\n            status ENUM('active', 'inactive', 'banned') DEFAULT 'active',\r\n            email_verified_at DATETIME NULL,\r\n            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP\r\n        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\r\n    ","bindings":[],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":21.78,"rows_affected":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"\r\n        CREATE TABLE IF NOT EXISTS profiles (\r\n            id INT AUTO_INCREMENT PRIMARY KEY,\r\n            user_id INT NOT NULL,\r\n            bio TEXT NULL,\r\n            phone VARCHAR(20) NULL,\r\n            avatar VARCHAR(255) NULL,\r\n            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\r\n            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE\r\n        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\r\n    ","bindings":[],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":26.56,"rows_affected":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"\r\n        CREATE TABLE IF NOT EXISTS permissions (\r\n            id INT AUTO_INCREMENT PRIMARY KEY,\r\n            name VARCHAR(100) UNIQUE NOT NULL,\r\n            description TEXT NULL,\r\n            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\r\n        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\r\n    ","bindings":[],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":33.21,"rows_affected":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"\r\n        CREATE TABLE IF NOT EXISTS user_permissions (\r\n            id INT AUTO_INCREMENT PRIMARY KEY,\r\n            user_id INT NOT NULL,\r\n            permission_id INT NOT NULL,\r\n            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,\r\n            FOREIGN KEY (permission_id) REFERENCES permissions(id) ON DELETE CASCADE,\r\n            UNIQUE KEY unique_user_permission (user_id, permission_id)\r\n        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\r\n    ","bindings":[],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":26.88,"rows_affected":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"\r\n        CREATE TABLE IF NOT EXISTS api_tokens (\r\n            id INT AUTO_INCREMENT PRIMARY KEY,\r\n            user_id INT NOT NULL,\r\n            token VARCHAR(255) UNIQUE NOT NULL,\r\n            name VARCHAR(100) DEFAULT 'API Token',\r\n            expires_at DATETIME NULL,\r\n            last_used_at DATETIME NULL,\r\n            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE\r\n        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\r\n    ","bindings":[],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":27.63,"rows_affected":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"\r\n        CREATE TABLE IF NOT EXISTS web_sessions (\r\n            id VARCHAR(128) PRIMARY KEY,\r\n            user_id INT NOT NULL,\r\n            remember_token VARCHAR(255) NULL,\r\n            ip_address VARCHAR(45) NULL,\r\n            user_agent TEXT NULL,\r\n            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n            expires_at DATETIME NULL,\r\n            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE\r\n        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\r\n    ","bindings":[],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":20.3,"rows_affected":0}
+[2025-07-02 00:53:45] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["view_users"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":1.53,"rows_returned":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["view_users","Kullanıcıları görüntüleme"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":1.29,"rows_affected":1}
+[2025-07-02 00:53:45] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["create_users"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.75,"rows_returned":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["create_users","Kullanıcı oluşturma"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":1.26,"rows_affected":1}
+[2025-07-02 00:53:45] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["edit_users"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":1.12,"rows_returned":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["edit_users","Kullanıcı düzenleme"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":1.06,"rows_affected":1}
+[2025-07-02 00:53:45] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["delete_users"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.4,"rows_returned":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["delete_users","Kullanıcı silme"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.81,"rows_affected":1}
+[2025-07-02 00:53:45] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["view_dashboard"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.25,"rows_returned":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["view_dashboard","Dashboard görüntüleme"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.63,"rows_affected":1}
+[2025-07-02 00:53:45] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["view_reports"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.24,"rows_returned":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["view_reports","Raporları görüntüleme"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.88,"rows_affected":1}
+[2025-07-02 00:53:45] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["manage_permissions"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.27,"rows_returned":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["manage_permissions","İzin yönetimi"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.76,"rows_affected":1}
+[2025-07-02 00:53:45] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["system_admin"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.23,"rows_returned":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["system_admin","Sistem yönetimi"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.84,"rows_affected":1}
+[2025-07-02 00:53:45] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["api_access"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.24,"rows_returned":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["api_access","API erişimi"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.63,"rows_affected":1}
+[2025-07-02 00:53:45] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["scada_view"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.25,"rows_returned":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["scada_view","SCADA panel görüntüleme"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.84,"rows_affected":1}
+[2025-07-02 00:53:45] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["scada_control"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.23,"rows_returned":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["scada_control","SCADA kontrol"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.95,"rows_affected":1}
+[2025-07-02 00:53:45] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["view_logs"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.31,"rows_returned":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["view_logs","Log görüntüleme"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.97,"rows_affected":1}
+[2025-07-02 00:53:45] debug: SQL Query {"sql":"SELECT id FROM permissions WHERE name = ?","bindings":["export_data"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.52,"rows_returned":0}
+[2025-07-02 00:53:45] debug: SQL Execute {"sql":"INSERT INTO permissions (name, description) VALUES (?, ?)","bindings":["export_data","Veri dışa aktarma"],"connection":"default"}
+[2025-07-02 00:53:45] debug: Query executed {"execution_time_ms":0.77,"rows_affected":1}
+[2025-07-02 00:53:46] debug: SQL Query {"sql":"SELECT id FROM users WHERE email = ?","bindings":["test.admin@koruphp.com"],"connection":"default"}
+[2025-07-02 00:53:46] debug: Query executed {"execution_time_ms":1.48,"rows_returned":0}
+[2025-07-02 00:53:46] debug: SQL Execute {"sql":"\r\n                INSERT INTO users (name, email, password, role, status, email_verified_at, created_at) \r\n                VALUES (?, ?, ?, ?, 'active', NOW(), NOW())\r\n            ","bindings":["Test Admin","test.admin@koruphp.com","$2y$10$9f3xy42W2\/QBRy5DRk2HD.ZMZYihIJsfkPpLJ9hSs32xD7umk2182","admin"],"connection":"default"}
+[2025-07-02 00:53:46] debug: Query executed {"execution_time_ms":1.56,"rows_affected":1}
+[2025-07-02 00:53:46] debug: SQL Execute {"sql":"\r\n                INSERT INTO profiles (user_id, bio) \r\n                VALUES (?, ?)\r\n            ","bindings":["1","Test kullanıcısı - admin"],"connection":"default"}
+[2025-07-02 00:53:46] debug: Query executed {"execution_time_ms":1.23,"rows_affected":1}
+[2025-07-02 00:53:46] debug: SQL Execute {"sql":"\r\n                    INSERT INTO user_permissions (user_id, permission_id)\r\n                    SELECT ?, id FROM permissions\r\n                ","bindings":["1"],"connection":"default"}
+[2025-07-02 00:53:46] debug: Query executed {"execution_time_ms":1.31,"rows_affected":13}
+[2025-07-02 00:53:46] debug: SQL Query {"sql":"SELECT id FROM users WHERE email = ?","bindings":["test.user@koruphp.com"],"connection":"default"}
+[2025-07-02 00:53:46] debug: Query executed {"execution_time_ms":0.42,"rows_returned":0}
+[2025-07-02 00:53:46] debug: SQL Execute {"sql":"\r\n                INSERT INTO users (name, email, password, role, status, email_verified_at, created_at) \r\n                VALUES (?, ?, ?, ?, 'active', NOW(), NOW())\r\n            ","bindings":["Test User","test.user@koruphp.com","$2y$10$jS.ejE1RnckfcIRpyXM5..KeltFnAkYqKMqTfzE6CG6t\/bi16LPrK","user"],"connection":"default"}
+[2025-07-02 00:53:46] debug: Query executed {"execution_time_ms":1.01,"rows_affected":1}
+[2025-07-02 00:53:46] debug: SQL Execute {"sql":"\r\n                INSERT INTO profiles (user_id, bio) \r\n                VALUES (?, ?)\r\n            ","bindings":["2","Test kullanıcısı - user"],"connection":"default"}
+[2025-07-02 00:53:46] debug: Query executed {"execution_time_ms":1.17,"rows_affected":1}
+[2025-07-02 00:53:46] debug: SQL Query {"sql":"SELECT id FROM users WHERE email = ?","bindings":["test.operator@koruphp.com"],"connection":"default"}
+[2025-07-02 00:53:46] debug: Query executed {"execution_time_ms":0.42,"rows_returned":0}
+[2025-07-02 00:53:46] debug: SQL Execute {"sql":"\r\n                INSERT INTO users (name, email, password, role, status, email_verified_at, created_at) \r\n                VALUES (?, ?, ?, ?, 'active', NOW(), NOW())\r\n            ","bindings":["Test Operator","test.operator@koruphp.com","$2y$10$GDvzq33t29q.3u.9LQTin.IwTzf.17axo7oEdqAtTkoLde44NQS6e","operator"],"connection":"default"}
+[2025-07-02 00:53:46] debug: Query executed {"execution_time_ms":0.81,"rows_affected":1}
+[2025-07-02 00:53:46] debug: SQL Execute {"sql":"\r\n                INSERT INTO profiles (user_id, bio) \r\n                VALUES (?, ?)\r\n            ","bindings":["3","Test kullanıcısı - operator"],"connection":"default"}
+[2025-07-02 00:53:46] debug: Query executed {"execution_time_ms":0.61,"rows_affected":1}

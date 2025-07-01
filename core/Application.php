@@ -71,8 +71,13 @@ class Application
     public function run(): void
     {
         try {
-            $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-            $method = $_SERVER['REQUEST_METHOD'];
+            $uri = $_SERVER['REQUEST_URI'] ?? '/';
+            $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
+            
+            // Query string'i kaldır
+            if (($pos = strpos($uri, '?')) !== false) {
+                $uri = substr($uri, 0, $pos);
+            }
             
             $this->logger->info("Request started", [
                 'method' => $method,
@@ -81,27 +86,32 @@ class Application
                 'ip' => $_SERVER['REMOTE_ADDR'] ?? ''
             ]);
             
-            // Middleware'leri çalıştır
-            foreach ($this->middleware as $middlewareClass) {
-                $middleware = new $middlewareClass();
-                if (!$middleware->handle()) {
-                    $this->logger->info("Request blocked by middleware: {$middlewareClass}");
-                    return;
-                }
-            }
+            // API ve Web route dosyalarını yükle
+            $this->loadRoutes();
             
+            // Router'ı çalıştır
             $this->router->dispatch($method, $uri);
             
         } catch (\Throwable $e) {
-            $this->logger->error("Application error", [
-                'error' => $e->getMessage(),
-                'file' => $e->getFile(),
-                'line' => $e->getLine()
-            ]);
-            $this->errorHandler->handleException($e);
+            $this->handleError($e);
         }
     }
-    
+    private function loadRoutes(): void
+    {
+        // Web routes
+        $webRoutesPath = __DIR__ . "/../modules/web/routes.php";
+        if (file_exists($webRoutesPath)) {
+            $this->logger->info("Loading routes from: " . $webRoutesPath);
+            require $webRoutesPath;
+        }
+        
+        // API routes
+        $apiRoutesPath = __DIR__ . "/../modules/api/routes.php";
+        if (file_exists($apiRoutesPath)) {
+            $this->logger->info("Loading API routes from: " . $apiRoutesPath);
+            require $apiRoutesPath;
+        }
+    }
     public function getRouter(): Router
     {
         return $this->router;

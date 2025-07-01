@@ -16,20 +16,31 @@ class TestController extends Controller
             .test-section { background: white; padding: 20px; margin: 20px 0; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
             .test-link { display: inline-block; background: #007cba; color: white; padding: 10px 15px; margin: 5px; text-decoration: none; border-radius: 3px; }
             .test-link:hover { background: #005a87; }
+            .test-link.api { background: #28a745; }
+            .test-link.api:hover { background: #1e7e34; }
             .info { background: #e7f3ff; padding: 10px; border-left: 4px solid #007cba; margin: 10px 0; }
             .success { color: #28a745; } .error { color: #dc3545; } .warning { color: #ffc107; }
+            .api-demo { background: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 5px; }
+            .code { background: #2d3748; color: #e2e8f0; padding: 10px; border-radius: 4px; font-family: monospace; margin: 5px 0; }
         </style></head><body>";
         
-        echo "<h1>🚀 koruPHP Test Sayfası</h1>";
+        echo "<h1>🚀 koruPHP Test & API Demo Sayfası</h1>";
         
         // Auth durumu göster
-        $authStatus = auth()->check() ? 'Giriş Yapılmış' : 'Giriş Yapılmamış';
-        $authClass = auth()->check() ? 'success' : 'error';
-        echo "<div class='info'><strong>Auth Durumu:</strong> <span class='{$authClass}'>{$authStatus}</span></div>";
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
         
-        if (auth()->check()) {
-            $user = user();
-            echo "<div class='info'><strong>Kullanıcı:</strong> {$user->getName()} ({$user->getEmail()})</div>";
+        $isLoggedIn = isset($_SESSION['user_id']);
+        $authStatus = $isLoggedIn ? 'Giriş Yapılmış' : 'Giriş Yapılmamış';
+        $authClass = $isLoggedIn ? 'success' : 'error';
+        echo "<div class='info'><strong>Web Auth Durumu:</strong> <span class='{$authClass}'>{$authStatus}</span></div>";
+        
+        if ($isLoggedIn) {
+            $user = sql_one("SELECT * FROM users WHERE id = ?", [$_SESSION['user_id']]);
+            if ($user) {
+                echo "<div class='info'><strong>Kullanıcı:</strong> {$user['name']} ({$user['email']}) - Rol: {$user['role']}</div>";
+            }
         }
         
         echo "<div class='test-section'>";
@@ -42,297 +53,314 @@ class TestController extends Controller
         echo "</div>";
         
         echo "<div class='test-section'>";
-        echo "<h3>🔐 Auth Testleri</h3>";
-        if (auth()->guest()) {
-            echo "<a href='/auth/login' class='test-link'>Login</a>";
+        echo "<h3>🔐 Web Auth Testleri</h3>";
+        if (!$isLoggedIn) {
+            echo "<a href='/auth/login' class='test-link'>Web Login</a>";
             echo "<a href='/test/create-test-users' class='test-link'>Test Kullanıcıları Oluştur</a>";
         } else {
-            echo "<a href='/auth/logout' class='test-link'>Logout</a>";
+            echo "<a href='/auth/logout' class='test-link'>Web Logout</a>";
             echo "<a href='/dashboard' class='test-link'>Dashboard</a>";
         }
         echo "</div>";
         
+        // YENİ: API Test Bölümü
         echo "<div class='test-section'>";
         echo "<h3>🔬 API Testleri</h3>";
-        echo "<a href='/api/auth/login' class='test-link' onclick='return false'>API Login (JSON)</a>";
-        echo "<a href='/api/user' class='test-link'>API User Info</a>";
+        echo "<a href='/test/api-demo' class='test-link api'>API Demo Sayfası</a>";
+        echo "<a href='/test/api-login-test' class='test-link api'>API Login Test</a>";
+        echo "<div class='api-demo'>";
+        echo "<h4>📋 API Endpoints:</h4>";
+        echo "<div class='code'>POST /api/auth/login - API Login</div>";
+        echo "<div class='code'>GET /api/auth/me - Current User</div>";
+        echo "<div class='code'>POST /api/auth/logout - API Logout</div>";
+        echo "<div class='code'>GET /api/users - Users List (Admin)</div>";
+        echo "<div class='code'>GET /api/users/{id} - User Detail</div>";
+        echo "<div class='code'>POST /api/users - Create User (Admin)</div>";
+        echo "</div>";
         echo "</div>";
         
         echo "<div class='test-section'>";
         echo "<h3>📊 Sistem Bilgileri</h3>";
         echo "<p><strong>PHP Version:</strong> " . PHP_VERSION . "</p>";
-        echo "<p><strong>Environment:</strong> <span class='" . (\Koru\Environment::isProduction() ? 'error' : 'success') . "'>" . \Koru\Environment::get() . "</span></p>";
-        echo "<p><strong>Debug Mode:</strong> <span class='" . (\Koru\Environment::isDebugging() ? 'success' : 'error') . "'>" . (\Koru\Environment::isDebugging() ? 'Aktif' : 'Pasif') . "</span></p>";
-        echo "<p><strong>Database Host:</strong> " . config('DEFAULT_DB_HOST') . ":" . config('DEFAULT_DB_PORT') . "</p>";
-        echo "<p><strong>Database Name:</strong> " . config('DEFAULT_DB_DATABASE') . "</p>";
+        echo "<p><strong>Framework:</strong> koruPHP</p>";
+        echo "<p><strong>Database:</strong> " . (db()->isConnected() ? '✅ Bağlı' : '❌ Bağlı değil') . "</p>";
         echo "</div>";
         
         echo "</body></html>";
     }
     
-    public function databaseTest(): void
+    /**
+     * API Demo Sayfası
+     */
+    public function apiDemo(): void
     {
-        try {
-            $connectionTest = sql("SELECT 1 as test_connection");
-            $tableTest = sql("SHOW TABLES");
-            $userCount = sql_one("SELECT COUNT(*) as count FROM users");
-            
-            logger()->info("Database test completed successfully", [
-                'tables_count' => count($tableTest),
-                'user_count' => $userCount['count'] ?? 0
-            ]);
-            
-            $this->json([
-                'success' => true,
-                'message' => 'Veritabanı testleri başarılı',
-                'connection' => $connectionTest,
-                'tables' => $tableTest,
-                'user_count' => $userCount,
-                'timestamp' => date('Y-m-d H:i:s')
-            ]);
-            
-        } catch (\Exception $e) {
-            logger()->error("Database test failed", [
-                'error' => $e->getMessage()
-            ]);
-            
-            $this->json([
-                'success' => false,
-                'error' => $e->getMessage(),
-                'timestamp' => date('Y-m-d H:i:s')
-            ], 500);
+        echo "<!DOCTYPE html>";
+        echo "<html><head><title>API Demo - koruPHP</title>";
+        echo "<style>
+            body { font-family: Arial, sans-serif; max-width: 1000px; margin: 0 auto; padding: 20px; background: #f4f4f4; }
+            .api-section { background: white; padding: 20px; margin: 20px 0; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+            .endpoint { background: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 5px; border-left: 4px solid #007cba; }
+            .method { display: inline-block; padding: 4px 8px; border-radius: 3px; color: white; font-weight: bold; margin-right: 10px; }
+            .method.post { background: #28a745; }
+            .method.get { background: #007bff; }
+            .method.delete { background: #dc3545; }
+            .code { background: #2d3748; color: #e2e8f0; padding: 10px; border-radius: 4px; font-family: monospace; margin: 5px 0; overflow-x: auto; }
+            .test-btn { background: #28a745; color: white; padding: 8px 15px; border: none; border-radius: 4px; cursor: pointer; margin: 5px; }
+            .result { background: #f8f9fa; padding: 10px; margin: 10px 0; border-radius: 4px; white-space: pre-wrap; font-family: monospace; }
+            .success { border-left: 4px solid #28a745; }
+            .error { border-left: 4px solid #dc3545; }
+            .form-group { margin: 10px 0; }
+            .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+            .form-group input, .form-group textarea { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+        </style>";
+        echo "<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>";
+        echo "</head><body>";
+        
+        echo "<h1>🔬 API Demo & Test Sayfası</h1>";
+        echo "<p><a href='/test'>← Ana Test Sayfasına Dön</a></p>";
+        
+        // API Login Test
+        echo "<div class='api-section'>";
+        echo "<h3>🔐 API Login Test</h3>";
+        echo "<div class='endpoint'>";
+        echo "<span class='method post'>POST</span><strong>/api/auth/login</strong>";
+        echo "</div>";
+        
+        echo "<div class='form-group'>";
+        echo "<label>Email:</label>";
+        echo "<input type='email' id='loginEmail' value='test.admin@koruphp.com' />";
+        echo "</div>";
+        
+        echo "<div class='form-group'>";
+        echo "<label>Password:</label>";
+        echo "<input type='password' id='loginPassword' value='password123' />";
+        echo "</div>";
+        
+        echo "<button class='test-btn' onclick='testApiLogin()'>API Login Test</button>";
+        echo "<div id='loginResult' class='result' style='display:none;'></div>";
+        echo "</div>";
+        
+        // Current User Test
+        echo "<div class='api-section'>";
+        echo "<h3>👤 Current User Test</h3>";
+        echo "<div class='endpoint'>";
+        echo "<span class='method get'>GET</span><strong>/api/auth/me</strong>";
+        echo "</div>";
+        echo "<button class='test-btn' onclick='testCurrentUser()'>Get Current User</button>";
+        echo "<div id='currentUserResult' class='result' style='display:none;'></div>";
+        echo "</div>";
+        
+        // Users List Test
+        echo "<div class='api-section'>";
+        echo "<h3>👥 Users List Test</h3>";
+        echo "<div class='endpoint'>";
+        echo "<span class='method get'>GET</span><strong>/api/users</strong>";
+        echo "</div>";
+        echo "<button class='test-btn' onclick='testUsersList()'>Get Users List</button>";
+        echo "<div id='usersListResult' class='result' style='display:none;'></div>";
+        echo "</div>";
+        
+        // Create User Test
+        echo "<div class='api-section'>";
+        echo "<h3>➕ Create User Test</h3>";
+        echo "<div class='endpoint'>";
+        echo "<span class='method post'>POST</span><strong>/api/users</strong>";
+        echo "</div>";
+        
+        echo "<div class='form-group'>";
+        echo "<label>Name:</label>";
+        echo "<input type='text' id='newUserName' value='Test User " . time() . "' />";
+        echo "</div>";
+        
+        echo "<div class='form-group'>";
+        echo "<label>Email:</label>";
+        echo "<input type='email' id='newUserEmail' value='test" . time() . "@example.com' />";
+        echo "</div>";
+        
+        echo "<div class='form-group'>";
+        echo "<label>Password:</label>";
+        echo "<input type='password' id='newUserPassword' value='password123' />";
+        echo "</div>";
+        
+        echo "<div class='form-group'>";
+        echo "<label>Role:</label>";
+        echo "<select id='newUserRole'>";
+        echo "<option value='user'>User</option>";
+        echo "<option value='admin'>Admin</option>";
+        echo "</select>";
+        echo "</div>";
+        
+        echo "<button class='test-btn' onclick='testCreateUser()'>Create User</button>";
+        echo "<div id='createUserResult' class='result' style='display:none;'></div>";
+        echo "</div>";
+        
+        // Token Storage
+        echo "<div class='api-section'>";
+        echo "<h3>🔑 Token Bilgisi</h3>";
+        echo "<div id='tokenInfo' class='code'>Token yok - Önce login yapın</div>";
+        echo "<button class='test-btn' onclick='clearToken()'>Token'ı Temizle</button>";
+        echo "</div>";
+        
+        // JavaScript
+        echo "<script>
+        let apiToken = localStorage.getItem('apiToken') || '';
+        
+        function updateTokenDisplay() {
+            const display = document.getElementById('tokenInfo');
+            if (apiToken) {
+                display.textContent = 'Token: ' + apiToken.substring(0, 20) + '...';
+                display.className = 'code success';
+            } else {
+                display.textContent = 'Token yok - Önce login yapın';
+                display.className = 'code error';
+            }
         }
-    }
-    
-    public function logTest(): void
-    {
-        try {
-            logger()->emergency("🚨 Emergency test");
-            logger()->alert("⚠️ Alert test");
-            logger()->critical("💥 Critical test");
-            logger()->error("❌ Error test");
-            logger()->warning("⚠️ Warning test");
-            logger()->notice("📢 Notice test");
-            logger()->info("ℹ️ Info test");
-            logger()->debug("🔍 Debug test");
-            
-            $this->json([
-                'success' => true,
-                'message' => 'Tüm log seviyeleri test edildi',
-                'timestamp' => date('Y-m-d H:i:s')
-            ]);
-            
-        } catch (\Exception $e) {
-            $this->json([
-                'success' => false,
-                'error' => $e->getMessage()
-            ], 500);
+        
+        function showResult(elementId, data, isSuccess = true) {
+            const element = document.getElementById(elementId);
+            element.style.display = 'block';
+            element.textContent = JSON.stringify(data, null, 2);
+            element.className = 'result ' + (isSuccess ? 'success' : 'error');
         }
-    }
-    
-    public function errorTest(): void
-    {
-        throw new \Exception("Bu bir test hatasıdır! Environment: " . \Koru\Environment::get());
-    }
-    
-    public function authTest(): void
-    {
-        try {
-            $authManager = auth();
+        
+        async function testApiLogin() {
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
             
-            $testResults = [
-                'is_authenticated' => $authManager->check(),
-                'current_user' => $authManager->check() ? $authManager->user()->toArray() : null,
-                'providers' => $authManager->getProviders(),
-                'capabilities' => [],
-                'session_info' => [
-                    'session_started' => session_status() === PHP_SESSION_ACTIVE,
-                    'session_id' => session_id(),
-                    'session_data' => $_SESSION ?? []
-                ]
-            ];
-            
-            // Her provider'ın yeteneklerini test et
-            foreach ($authManager->getProviders() as $provider) {
-                try {
-                    $testResults['capabilities'][$provider] = $authManager->getProviderCapabilities($provider);
-                } catch (\Exception $e) {
-                    $testResults['capabilities'][$provider] = ['error' => $e->getMessage()];
+            try {
+                const response = await fetch('/api/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email, password })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success && data.data && data.data.token) {
+                    apiToken = data.data.token;
+                    localStorage.setItem('apiToken', apiToken);
+                    updateTokenDisplay();
                 }
+                
+                showResult('loginResult', data, data.success);
+            } catch (error) {
+                showResult('loginResult', { error: error.message }, false);
+            }
+        }
+        
+        async function testCurrentUser() {
+            if (!apiToken) {
+                showResult('currentUserResult', { error: 'Token gerekli - Önce login yapın' }, false);
+                return;
             }
             
-            // JWT test (eğer kuruluysa)
-            $testResults['jwt_available'] = class_exists('\Firebase\JWT\JWT');
-            
-            // External auth test
-            $testResults['external_auth'] = [
-                'enabled' => config('EXTERNAL_AUTH_ENABLED', false),
-                'url' => config('EXTERNAL_AUTH_URL', ''),
-                'has_api_key' => !empty(config('EXTERNAL_AUTH_API_KEY'))
-            ];
-            
-            $this->json([
-                'success' => true,
-                'auth_test_results' => $testResults,
-                'timestamp' => date('Y-m-d H:i:s')
-            ]);
-            
-        } catch (\Exception $e) {
-            $this->json([
-                'success' => false,
-                'error' => $e->getMessage(),
-                'trace' => $e->getTraceAsString()
-            ], 500);
+            try {
+                const response = await fetch('/api/auth/me', {
+                    headers: {
+                        'Authorization': 'Bearer ' + apiToken
+                    }
+                });
+                
+                const data = await response.json();
+                showResult('currentUserResult', data, data.success);
+            } catch (error) {
+                showResult('currentUserResult', { error: error.message }, false);
+            }
         }
+        
+        async function testUsersList() {
+            if (!apiToken) {
+                showResult('usersListResult', { error: 'Token gerekli - Önce login yapın' }, false);
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/users', {
+                    headers: {
+                        'Authorization': 'Bearer ' + apiToken
+                    }
+                });
+                
+                const data = await response.json();
+                showResult('usersListResult', data, data.success);
+            } catch (error) {
+                showResult('usersListResult', { error: error.message }, false);
+            }
+        }
+        
+        async function testCreateUser() {
+            if (!apiToken) {
+                showResult('createUserResult', { error: 'Token gerekli - Önce login yapın' }, false);
+                return;
+            }
+            
+            const userData = {
+                name: document.getElementById('newUserName').value,
+                email: document.getElementById('newUserEmail').value,
+                password: document.getElementById('newUserPassword').value,
+                role: document.getElementById('newUserRole').value
+            };
+            
+            try {
+                const response = await fetch('/api/users', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer ' + apiToken
+                    },
+                    body: JSON.stringify(userData)
+                });
+                
+                const data = await response.json();
+                showResult('createUserResult', data, data.success);
+            } catch (error) {
+                showResult('createUserResult', { error: error.message }, false);
+            }
+        }
+        
+        function clearToken() {
+            apiToken = '';
+            localStorage.removeItem('apiToken');
+            updateTokenDisplay();
+        }
+        
+        // Sayfa yüklendiğinde token'ı göster
+        updateTokenDisplay();
+        </script>";
+        
+        echo "</body></html>";
     }
     
-    public function permissionTest(): void
+    /**
+     * Basit API Login Test
+     */
+    public function apiLoginTest(): void
     {
-        if (!auth()->check()) {
-            $this->json([
-                'error' => 'User not authenticated',
-                'login_url' => '/auth/login'
-            ], 401);
-            return;
-        }
+        echo "<!DOCTYPE html>";
+        echo "<html><head><title>API Login Test</title></head><body>";
+        echo "<h1>🔐 API Login Test</h1>";
         
-        $user = user();
-        
-        // Test permission'ları
-        $permissions = [
-            'users.view', 'users.edit', 'users.delete', 'users.create', 'users.ban',
-            'scada.view', 'scada.control', 'scada.config',
-            'reports.view', 'reports.export',
-            'api.access', 'api.admin',
-            'system.admin'
+        // Test kullanıcısı ile login dene
+        $testCredentials = [
+            'email' => 'test.admin@koruphp.com',
+            'password' => 'password123'
         ];
         
-        $permissionResults = [];
-        foreach ($permissions as $permission) {
-            $permissionResults[$permission] = can($permission);
-        }
+        echo "<h3>Test Credentials:</h3>";
+        echo "<pre>" . json_encode($testCredentials, JSON_PRETTY_PRINT) . "</pre>";
         
-        // Role testleri
-        $roles = ['user', 'operator', 'admin'];
-        $roleResults = [];
-        foreach ($roles as $role) {
-            $roleResults[$role] = hasRole($role);
-        }
+        echo "<h3>cURL Komutu:</h3>";
+        echo "<div style='background: #f4f4f4; padding: 10px; border-radius: 5px;'>";
+        echo "<code>curl -X POST " . url('/api/auth/login') . " \\<br>";
+        echo "&nbsp;&nbsp;-H \"Content-Type: application/json\" \\<br>";
+        echo "&nbsp;&nbsp;-d '" . json_encode($testCredentials) . "'</code>";
+        echo "</div>";
         
-        // Database'den gerçek izinleri al
-        $dbPermissions = sql("
-            SELECT p.name, p.display_name, p.category
-            FROM permissions p
-            JOIN user_permissions up ON p.id = up.permission_id
-            WHERE up.user_id = ?
-        ", [$user->getId()]);
+        echo "<p><a href='/test/api-demo'>→ API Demo Sayfasına Git</a></p>";
+        echo "<p><a href='/test'>← Ana Test Sayfasına Dön</a></p>";
         
-        $this->json([
-            'success' => true,
-            'user' => $user->toArray(),
-            'permission_tests' => $permissionResults,
-            'role_tests' => $roleResults,
-            'database_permissions' => $dbPermissions,
-            'timestamp' => date('Y-m-d H:i:s')
-        ]);
-    }
-    
-    public function createTestUsers(): void
-    {
-        try {
-            // Test kullanıcıları oluştur (sadece yoksa)
-            $testUsers = [
-                [
-                    'name' => 'Test Admin',
-                    'email' => 'test.admin@koruphp.com',
-                    'password' => 'password123',
-                    'role' => 'admin'
-                ],
-                [
-                    'name' => 'Test User',
-                    'email' => 'test.user@koruphp.com',
-                    'password' => 'password123',
-                    'role' => 'user'
-                ],
-                [
-                    'name' => 'Test Operator',
-                    'email' => 'test.operator@koruphp.com',
-                    'password' => 'password123',
-                    'role' => 'operator'
-                ]
-            ];
-            
-            $createdUsers = [];
-            
-            foreach ($testUsers as $userData) {
-                // Kullanıcı zaten var mı kontrol et
-                $existingUser = sql_one("SELECT id FROM users WHERE email = ?", [$userData['email']]);
-                
-                if (!$existingUser) {
-                    $hashedPassword = password_hash($userData['password'], PASSWORD_DEFAULT);
-                    
-                    $userId = db()->insertGetId("
-                        INSERT INTO users (name, email, password, role, status, email_verified_at, created_at) 
-                        VALUES (?, ?, ?, ?, 'active', NOW(), NOW())
-                    ", [
-                        $userData['name'],
-                        $userData['email'],
-                        $hashedPassword,
-                        $userData['role']
-                    ]);
-                    
-                    // Profil oluştur
-                    sql_execute("
-                        INSERT INTO profiles (user_id, bio) 
-                        VALUES (?, ?)
-                    ", [$userId, 'Test kullanıcısı - ' . $userData['role']]);
-                    
-                    // Admin'e tüm izinleri ver
-                    if ($userData['role'] === 'admin') {
-                        sql_execute("
-                            INSERT INTO user_permissions (user_id, permission_id)
-                            SELECT ?, id FROM permissions
-                        ", [$userId]);
-                    }
-                    // Operator'e SCADA izinlerini ver
-                    elseif ($userData['role'] === 'operator') {
-                        sql_execute("
-                            INSERT INTO user_permissions (user_id, permission_id)
-                            SELECT ?, id FROM permissions WHERE category = 'scada'
-                        ", [$userId]);
-                    }
-                    
-                    $createdUsers[] = [
-                        'id' => $userId,
-                        'name' => $userData['name'],
-                        'email' => $userData['email'],
-                        'role' => $userData['role']
-                    ];
-                } else {
-                    $createdUsers[] = [
-                        'id' => $existingUser['id'],
-                        'email' => $userData['email'],
-                        'status' => 'already_exists'
-                    ];
-                }
-            }
-            
-            $this->json([
-                'success' => true,
-                'message' => 'Test kullanıcıları oluşturuldu',
-                'users' => $createdUsers,
-                'login_info' => [
-                    'admin' => 'test.admin@koruphp.com / password123',
-                    'user' => 'test.user@koruphp.com / password123',
-                    'operator' => 'test.operator@koruphp.com / password123'
-                ]
-            ]);
-            
-        } catch (\Exception $e) {
-            $this->json([
-                'success' => false,
-                'error' => $e->getMessage()
-            ], 500);
-        }
+        echo "</body></html>";
     }
 }
